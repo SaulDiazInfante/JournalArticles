@@ -1,0 +1,83 @@
+	We consider a vector Multi-Host SI structure, that is, 
+human, animal and vector populations respectively splits susceptible $S$ 
+and 
+infected $I$ classes in $S_h$, $I_h$, $S_a$, $I_a$, and $S_v$, $I_v$ 
+subclasses.
+For modeling propose, we assume that whole populations of 
+humans $H$ and animals $A$ are constants and the total vector population 
+$T_v = S_v + I_v$ follows a logistic dynamics \citep[e.g.][]{Crawford2014}. 
+To be precise, let 
+$K$ carrying capacity, $\Lambda_{v}$ vector birth, $\mu_{v}$ vector death 
+rates  and $r=\Lambda_{v} - \mu_v$ vector grow rate and
+$\mu_v+(r/K)T_v$, the vector disease mortality 
+(independent from the illness). Then, the total vector 
+population follows the dynamics described by
+\begin{equation}
+	\dot{T}_{v} = \Lambda_{v} T_{v} 
+	-\left[ \mu_v + (r/K) T_v \right] T_v.
+\end{equation}
+%
+\paragraph{Hosts dynamics}
+	We consider that when an infected vector bites a susceptible host, this moves
+to the infected  class with certain probability. Set
+$f\left( S,I_{v}\right)$ 
+for the infection force and $N=S+I$ 
+for total host population, hence we describe the host 
+dynamics by
+\begin{equation}\label{eqn:host_dynamics}
+	\begin{aligned}
+		\dot{S} &= \mu N - f\left( S,I_{v}\right) - \mu S\\
+		\dot{I} &= f\left( S,I_{v}\right) - \mu I .
+	\end{aligned}
+\end{equation}
+Note that $N$ remains constant, so we replace $S$ by $N -I$, 
+and rewrite the infected equation in \eqref{eqn:host_dynamics} as
+\begin{equation}\label{eqn:host_infected}
+	\dot{I} = f\left( N-I,I_{v}\right) - \mu I.
+\end{equation}
+\paragraph{Model Formulation}
+Therefore, combining ideas to the infection forces from \cite{Crawford2014},
+the vector mortality formulation of \cite{Mena-Lorca2006} and the dynamics
+described by \eqref{eqn:host_infected}, we propose our vector multi-host
+deterministic base model (see \Cref{tbl:parameter_definition} for parameters 
+details)
+\begin{equation}\label{eq.1}
+	\begin{aligned}
+		\dot{I}_{h} &= z_{h}\theta_{h}I_{v}\left(H-I_{h}\right)-\mu_{h}I_{h}\\
+		\dot{I}_{a} &= z_{a}\theta_{a}I_{v}\left(A-I_{a}\right)-\mu_{a}I_{a}\\
+		\dot{S}_{v} &= \Lambda_{v}
+			T_{v}-
+			\left(
+				z_{h}\theta_{v_{h}}I_{h}+z_{a}\theta_{v_{a}}I_{a}
+			\right)S_{v}
+			-(\mu_v+r_K T_v) T_v \frac{S_{v}}{T_{v}}
+			\\
+			\dot{I}_{v} &= 
+			\left(
+				z_{h}\theta_{v_{h}}I_{h}
+				+z_{a}\theta_{v_{a}} I_{a}
+			\right)S_{v}
+			-
+			(\mu_v + r_K T_v)T_v
+			\frac{I_{v}}{T_{v}}
+\end{aligned}
+\end{equation}
+
+\begin{align*}
+	\theta_{h}=\frac{\pi_{h}}{H}, \qquad
+	\theta_{a}=\frac{\pi_{a}}{A}, \qquad
+	\theta_{v_{h}}=\frac{\pi_{v_{h}}}{H}, \qquad
+	\theta_{v_{a}}=\frac{\pi_{v_{a}}}{A},\qquad
+	r_K =\frac{r}{K}.
+\end{align*}
+
+	Our model describes the vector transmission dynamics of diseases with 
+human---animal multi-host vector structure and where the host population lacks
+of recover classes --- for example, due to permanent infection, and  absent or 
+inefficient of treatment.
+Along with others, we mention Chagas, Plague, Leishmaniasis
+\cite{Alvar2012, Cruz-Pacheco2012a, singh2013animal} as diseases
+with this characteristics. In the following 
+section we extend this deterministic base to a more realistic description.
+%
+\input{Sections/Section2/model_parameters_table}

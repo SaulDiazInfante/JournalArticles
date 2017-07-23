@@ -1,0 +1,22 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Stochastic Multi-Host Model}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Deterministic SI Multi-Host Model}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Stochastic Extension}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Existence and Regularity of Solutions}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{ Global Stochastic Asymptotic Stability of the Disease-Free Fixed Point }{}% 6
+\BOOKMARK [1][-]{section.4}{Stochastic Persistence}{}% 7
+\BOOKMARK [1][-]{section.5}{Numerical Results}{}% 8
+<<<<<<< Updated upstream
+\BOOKMARK [2][-]{subsection.5.1}{ Experiment 1: Extinction \204 Disease-Free Equilibrium Numeric Analysis }{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{Experiment 2: Persistence \204 Illness Subservience}{section.5}% 10
+\BOOKMARK [1][-]{section.6}{Conclusions and final comments}{}% 11
+\BOOKMARK [1][-]{appendix.A}{Existence and Regularity of Solutions}{}% 12
+\BOOKMARK [1][-]{appendix.B}{Stability}{}% 13
+\BOOKMARK [1][-]{appendix.C}{Linear-Steklov Method}{}% 14
+=======
+\BOOKMARK [2][-]{subsection.5.1}{Disease-Free Equilibrium}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{Persistence}{section.5}% 10
+\BOOKMARK [1][-]{appendix.A}{Existence and Regularity of Solutions}{}% 11
+\BOOKMARK [1][-]{appendix.B}{Stability}{}% 12
+\BOOKMARK [1][-]{appendix.C}{Linear-Steklov Method}{}% 13
+>>>>>>> Stashed changes

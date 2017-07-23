@@ -1,0 +1,60 @@
+\begin{table}[p]
+	\centering
+	\caption{Parameters for Experiment 1 (Survival numerics)}
+	\label{tbl:free_disease_parameters}
+	\begin{tabular}{@{}llllc@{}}
+		\toprule
+		\multicolumn{4}{c}{%
+			Parameters for numerical experiment 1: disease free 
+			equilibrium %
+			} & \multicolumn{1}{c}{Reference}
+		\\
+		\cmidrule{1-3}
+		$H = \num{1500}  ~\si{humans}$		&
+		$A = \num{2500}  ~\si{animals}$		& 
+		$K = \num{80000} ~\si{vectors}$		&
+		& ---
+		\\
+		$\mu_h=0.0142857~\si{year^{-1}}$	&$\mu_a=0.1666666 ~\si{year^{-1}}$	& 
+		$\mu_v=281.1 ~\si{year^{-1}}$ 		&																		& ---
+		\\
+		$z_h=14.6 ~\si{bite.year^{-1}.vector^{-1}}$			&
+		$z_a=40.15~\si{bite.year^{-1}.vector^{-1}}$			&
+		$\pi_{a} = \num{0.0009} ~\si{animal.bite^{-1}}$	&
+		&\cite{Cruz-Pacheco2012a}
+		\\
+		$\pi_{h} = \num{0.0009} ~\si{human.bite^{-1}}$	 	& 
+		$\pi_{v_h} = \num{0.03} ~\si{vector.bite^{-1}}$		& 
+		$\pi_{v_a} = \num{0.49} ~\si{vector.bite^{-1}}$		&
+		& \cite{Cohen2001}
+		\\
+		&&$\Lambda_v=281.561 ~\si{year^{-1}}$ &&	\cite{Rabinovich1972}
+		\\
+		&& $T=400 ~\si{years}$&& ---
+		\\
+		\\
+		&\multicolumn{2}{r}{
+					$\sigma_{z_a} = \num{2.2}$
+					\si{bite.vector^{-1}.human^{-1}.year^{-1}}
+				}
+		&
+		\multicolumn{2}{l}{vector human}		\\
+		&
+		\multicolumn{2}{r}{%
+			$\sigma_{z_h} = \num{2.3}$
+			\si{bite.vector^{-1}.animal^{-1}.year^{-1}}
+		}
+		&
+		\multicolumn{2}{l}{and vector}			\\
+		&
+		&& 
+		\multicolumn{2}{l}{animal biting}	\\
+		&
+		&
+		&
+		\multicolumn{2}{l}{intensity}\\
+		&&&
+		\multicolumn{2}{l}{noise}\\
+		\bottomrule
+	\end{tabular}
+\end{table}

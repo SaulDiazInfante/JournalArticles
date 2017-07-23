@@ -1,0 +1,986 @@
+	For begin with the analysis of SDE ~\eqref{eq.2}, we guarantee the existence 
+	and uniqueness of the solutions, and since we study populations, these 
+	solution have to be positive. The following Theorem establish this.
+\begin{theorem}\label{thm:regularity}
+		Under \Cref{ass:regularity} there is an unique solution 
+		$\left( I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t) \right)$ to SDE~\eqref{eq.2} 
+		for $t\geq 0$ and the 
+	solution will remain in $\mathbf{D}$ with probability 1, namely $\left( 
+	I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t) \right)\in \mathbf{D}$ for all $t\geq 0$ almost surely.
+\end{theorem}
+\begin{proof}
+	Let us first outline of the proof. We first going to guarantee the local 
+existence and uniqueness of the solution, after that, we prove the globality 
+of this and the invariance of $\mathbf{D}$ employing  the Corollary 3.1 of 
+\citet[p.~76]{Khasminskii2012}.
+
+	Let 
+	$
+		X(t)=( I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t) )
+	$,
+$
+	F_{1} = F_{1}\left(I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t)\right)
+$,
+$
+	F_{2} = F_{2}\left(I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t)\right)
+$.
+For each $n\in \mathbb{N}$ define,
+\begin{align*}
+	\mathbf{D}_{n}
+		:= 
+		\{ 
+			\left( 
+				I_{h},I_{a},S_{v},I_{v} 
+			\right)\in \mathbb{R}^{4}:
+			\quad
+			& 
+			e^{-n} < I_{h} < H-e^{-n},
+			\quad
+			e^{-n} < I_{a} < A-e^{-n}, \\
+			&
+			e^{-n} < S_{v} < K-e^{-n},
+			e^{-n} < I_{v} < K-e^{-n},
+			S_{v}+I_{v} \leq K 
+		 \}.
+\end{align*}
+
+Let us denote by $\tau(\mathbf{D}_{n})$  the random time of first 
+exit of stochastic process $\left( I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t) \right)$ from the 
+set $\mathbf{D}_{n}$. 
+Since $b_{0}(X(t))$ and $b_{1}(X(t))$ are locally Lipschitz-continuous and satisfy 
+linear growth condition on $\mathbf{D}_{n}$, there is an unique local solution on 
+$t\in [0,\tau(\mathbf{D}_{n}))$ for any initial value 
+$\left( I_{h}(0),I_{a}(0),S_{v}(0),I_{v}(0) \right)\in \mathbf{D}_{n}$.\\
+
+	To prove the global existence of the solution, we follow ideas of 
+\cite{Schurz2015}. 
+Let,
+\begin{align*}
+	V\left( I_{h},I_{a},S_{v},I_{v} \right) 
+		&= I_{h} 
+		+ (H-I_{h}) 
+		- \ln(H-I_{h}) 
+		+ I_{a} + (A-I_{a}) -
+		\ln(A-I_{a}) + (K-S_{v})\\
+		&\quad -\ln (K-S_{v}) 
+		+ S_{v} 
+		- \ln S_{v} 
+		+ I_{v} 
+		+ (K-I_{v}) 
+		- \ln(K-I_{v}),
+\end{align*}
+
+defined on
+\begin{align*}
+	\widetilde{\mathbf{D}} 
+		:=\{ 
+			\left( 
+				I_{h}, I_{a}, S_{v},I_{v} 
+			\right) \in \mathbb{R}^{4};  
+			\ 0\leq t: \ 
+			0<I_{h}< H,
+			\ 
+			0<I_{a}< A,
+			\ 
+			0< S_{v}< K,
+			0< I_{v}< K,
+			\ 
+			S_{v}+I_{v}\leq K
+		\}.
+\end{align*}
+
+Since $y-\ln y \geq 1$ for all $y\in \left(0,\infty \right)$, it follows that 
+$
+	V \left( 
+		I_{h},I_{a},S_{v},I_{v} 
+	\right) \geq 5
+$
+for
+$
+	\left(
+		I_{h},I_{a},S_{v},I_{v} 
+	\right)\in \widetilde{\mathbf{D}}
+$
+Also, we define
+\begin{multline*}
+	c = \frac{1}{5}
+		\left( 
+			\alpha_{h}
+			+\alpha_{a}
+		\right) K 
+		+ 
+		\frac{2}{5}
+		\left(
+			\alpha_{v_{h}}H
+			+\alpha_{v_{a}}A
+		\right)
+		+\frac{1}{5}
+		\left( 
+			2\Lambda_{v}+r
+		\right) 
+		+
+		\frac{1}{10}
+		\sup
+		\limits_{(I_{h},I_{a},S_{v},I_{v})
+		\in 
+		\widetilde{\mathbf{D}}}  
+		\left\{
+			\left(
+				\theta_{h}^{2}K^{4}
+				+3 \theta_{v_{h}}^{2}H^{2}K^{2} 
+			\right)G_{1}^{2}
+		\right\}\\
+		+
+		\frac{1}{10}
+		\sup
+		\limits_{(I_{h},I_{a},S_{v},I_{v})
+		\in 
+		\widetilde{\mathbf{D}}} 
+		\left\{
+			\left(
+				\theta_{a}^{2}K^{4}
+				+3\theta_{v_{a}}^{2}A^{2} K^{2} 
+			\right)G_{2}^{2}
+		\right\} ~.
+\end{multline*}
+
+	Applying the infinitesimal generator (eq.~\eqref{eq.ap.2}) to our
+Liapunov function 
+$
+	V
+	\left( 
+		I_{h},I_{a},S_{v},I_{v} 
+	\right)
+$, yields
+\begin{align*}
+	\mathcal{L}V\left( I_{h},I_{a},S_{v},I_{v} \right) &= 
+		\left[
+			\alpha_{h}I_{v}\left(H-I_{h}\right)
+			-\mu_{h}I_{h}\right] \frac{\partial V}{\partial I_{h}} 
+			+ 
+			\left[
+				\alpha_{a}I_{v}
+					\left(
+						A-I_{a}
+					\right)
+					-\mu_{a}I_{a}
+			\right]
+			\frac{\partial V}{\partial I_{a}}
+		\\%
+		&+ 
+		\left[
+			\Lambda_{v}T_{v}
+			-
+			\left(
+				\alpha_{v_{h}}I_{h}
+				+\alpha_{v_{a}}	I_{a}
+			\right) S_{v}
+			-
+			\left(
+				\mu_{v}+r_{k}
+				T_{v}
+			\right) S_{v}
+		\right]
+		\frac{\partial V}{\partial S_{v}}
+		\\ %
+		&+ 
+		\left[
+			\left(
+				\alpha_{v_{h}}I_{h}+\alpha_{v_{a}}I_{a}
+			\right) S_{v}
+			-
+			\left(
+				\mu_{v}+r_{k}T_{v}
+			\right) I_{v}
+		\right] 
+		\frac{\partial V}{\partial I_{v}}
+		\\ %
+		&+
+		\frac{1}{2}
+		F_{1}^{2}
+		\theta_{h}^{2}I_{v}^{2}
+		\left(
+			H-I_{h}
+		\right)^{2}
+		\frac{\partial^{2}V}{\partial I_{h}^{2}}
+		+\frac{1}{2}
+		F_{2}^{2}
+		\theta_{a}^{2}
+		I_{v}^{2}
+		\left(
+			A-I_{a}
+		\right)^{2}
+		\frac{\partial^{2}V}{\partial I_{a}^{2}}
+		\\ %
+		&+
+		\frac{1}{2}
+		\left[
+			F_{1}^{2}
+			\theta_{v_{h}}^{2}I_{h}^{2}S_{v}^{2} 
+			+F_{2}^{2}\theta_{v_{a}}^{2}I_{a}^{2}S_{v}^{2}
+		\right]
+		\left(
+			\frac{\partial^{2}V}{\partial S_{v}^{2}}
+			+\frac{\partial^{2}V}{\partial I_{v}^{2}}
+		\right)\\[0.25cm]
+		&=
+		\left(
+			\frac{\alpha_{h}I_{v}
+				\left(
+					H-I_{h}
+				\right)
+				-\mu_{h}I_{h}}{H-I_{h}}
+		\right) 
+		+
+		\left(
+			\frac{
+					\alpha_{a}I_{v}
+					\left(
+						A-I_{a}
+					\right)
+					-\mu_{a}I_{a}
+			}{A-I_{a}}
+		\right)
+		\\ %
+		&+ 
+		\left(
+			\frac{
+				\Lambda_{v} 
+				T_{v}
+				-
+					\left(
+						\alpha_{v_{h}}I_{h}
+						+\alpha_{v_{a}}I_{a}
+					\right)
+					S_{v}
+					-
+					\left(
+						\mu_{v}+r_{k}T_{v}
+					\right)S_{v}
+				}{-S_{v}}
+		\right)
+		\\ %
+		&+ 
+		\left(
+			\frac{
+				\Lambda_{v} 
+				T_{v}
+				-
+				\left(
+					\alpha_{v_{h}}I_{h}
+					+\alpha_{v_{a}}I_{a}
+				\right)S_{v}
+				-
+				\left(
+					\mu_{v}
+					+r_{k}T_{v}
+				\right)
+				S_{v}
+			}{K-S_{v}}
+		\right)
+		\\ %
+		&+ 
+		\left(
+			\frac{
+				\left(
+					\alpha_{v_{h}}I_{h}
+					+\alpha_{v_{a}}I_{a}
+				\right)S_{v}
+				-
+				\left(
+					\mu_{v}+r_{k}T_{v}
+				\right) I_{v}
+			}{K-I_{v}}
+		\right)\\
+		&+ 
+		\frac{1}{2}
+		\left[
+			\left(
+				\frac{
+					F_{1}^{2}\theta_{h}^{2}I_{v}^{2}
+					\left(
+						H-I_{h}
+					\right)^{2}
+				}{(H-I_{h})^{2}}
+			\right)
+			+
+			\left(
+				\frac{
+					F_{2}^{2} \theta_{a}^{2}I_{v}^{2}
+					\left(
+						A-I_{a}
+					\right)^{2}
+				}{(A-I_{a})^{2}}
+			\right)
+		\right]
+		\\ %
+		&+
+		\frac{1}{2}
+		\left[
+			F_{1}^{2}\theta_{v_{h}}^{2}I_{h}^{2}S_{v}^{2} 
+			+F_{2}^{2}\theta_{v_{a}}^{2}I_{a}^{2}S_{v}^{2}
+		\right]
+		\left(
+			\frac{1}{S_{v}^{2}} 
+			+ \frac{1}{(K-S_{v})^{2}} 
+			+ \frac{1}{(K-I_{v})^{2}}
+		\right) ~.
+\end{align*}
+Substituting $F_{i}=I_{v}G_{i}$ on the above relation, we obtain 
+\begin{align*}
+	\mathcal{L}V
+	\left(
+		I_{h},I_{a},S_{v},I_{v}
+	\right)
+	&=
+		\left(
+			\frac{
+				\alpha_{h}I_{v}
+				\left(
+					H-I_{h}
+				\right)
+				-\mu_{h}I_{h}
+			}
+			{H-I_{h}}
+		\right) + 
+			\left(
+				\frac{
+					\alpha_{a}I_{v}
+					\left(
+						A-I_{a}
+					\right)
+					-\mu_{a}I_{a}
+				}
+			{A-I_{a}}
+		\right)
+		\\ %
+		&+ 
+		\left(
+			\frac{
+				\Lambda_{v} T_{v}
+				-s
+				\left(
+					\alpha_{v_{h}}I_{h}+\alpha_{v_{a}}I_{a}
+				\right)
+				S_{v}
+				-
+				\left(
+					\mu_{v}+r_{k}T_{v}
+				\right)S_{v}
+			}
+			{-S_{v}}
+		\right)
+		\\ %
+		&+ 
+		\left(
+			\frac{
+				\Lambda_{v}T_{v}
+				-
+				\left(
+					\alpha_{v_{h}}I_{h}
+					+\alpha_{v_{a}}I_{a}
+				\right)
+				S_{v}
+				-
+				\left(
+					\mu_{v}+r_{k}T_{v}
+				\right)
+				S_{v}
+			}{K-S_{v}}
+		\right)
+		\\ %
+		&+ 
+		\left(
+			\frac{
+				\left(
+					\alpha_{v_{h}}I_{h}
+					+\alpha_{v_{a}}I_{a}
+				\right)
+				S_{v}
+				-
+				\left(
+					\mu_{v}
+					+r_{k}T_{v}
+				\right)
+				I_{v}
+			}
+			{K-I_{v}}
+		\right)
+		\\ %
+		&+
+		\frac{1}{2}
+		\left[
+			\left(
+				\frac{
+					I_{v}^{2}G_{1}^{2} \theta_{h}^{2}I_{v}^{2}
+					\left(
+						H-I_{h}s
+					\right)^{2}
+				}
+				{(H-I_{h})^{2}}
+			\right)
+			+
+			\left(
+				\frac{
+					I_{v}^{2}G_{2}^{2} \theta_{a}^{2} I_{v}^{2}
+					\left(
+						A-I_{a}
+					\right)^{2}}
+					{(A-I_{a})^{2}}
+			\right)
+		\right]
+		\\ %
+		&+
+		\frac{1}{2}
+		\left[
+			I_{v}^{2}G_{1}^{2} \theta_{v_{h}}^{2}I_{h}^{2}S_{v}^{2}
+			+I_{v}^{2}G_{2}^{2}\theta_{v_{a}}^{2}I_{a}^{2}S_{v}^{2}
+		\right]
+		\left(
+			\frac{1}{S_{v}^{2}} 
+			+\frac{1}{(K-S_{v})^{2}} 
+			+\frac{1}{(K-I_{v})^{2}}
+		\right) ~.
+\end{align*}
+Discarding negative terms, we bound the above relation by
+\begin{align*}
+	\mathcal{L}V
+	\left(
+		I_{h},I_{a},S_{v},I_{v} 
+	\right)
+	&\leq
+	\left(
+		\alpha_{h}
+		+\alpha_{a}
+	\right)
+	I_{v} 
+	+ 
+	2
+	\left(
+		\alpha_{v_{h}}I_{h}
+		+\alpha_{v_{a}}I_{a}
+	\right)
+	+
+	\left(
+		\mu_{v} + r_{k}T_{v}
+	\right)
+	\\ %
+	&+ 
+	\left( 
+		r+\Lambda_{v}
+	\right) 
+	+ \frac{1}{2}
+	\left(
+		G_{1}^{2} \theta_{h}^{2}
+		+G_{2}^{2} \theta_{a}^{2}
+	\right)
+	I_{v}^{4}\\
+	&+
+	\frac{1}{2}
+	\left( 
+		2I_{v}^{2}G_{1}^{2} \theta_{v_{h}}^{2}I_{h}^{2}
+		+ 2I_{v}^{2}G_{2}^{2}\theta_{v_{a}}^{2}I_{a}^{2}
+		+ G_{1}^{2}\theta_{v_{h}}^{2}I_{h}^{2}S_{v}^{2} 
+		+ G_{2}^{2}\theta_{v_{a}}^{2}I_{a}^{2}S_{v}^{2}
+	\right)
+	\\
+	&\leq 
+		\left( 
+			\alpha_{h} + \alpha_{a} 
+		\right)
+		K + 2
+		\left(
+			\alpha_{v_{h}}H
+			+\alpha_{v_{a}}A
+		\right)
+		+
+		\left( 
+			2\Lambda_{v}+r
+		\right)
+		\\ %
+	&+ 
+	\sup
+	\limits_{
+		(I_{h},I_{a},S_{v},I_{v})\in \widetilde{\mathbf{D}}
+	} 
+	\frac{1}{2} 
+	\left\{
+		\left( 
+			\theta_{h}^{2}K^{4}
+			+3\theta_{v_{h}}^{2}H^{2}K^{2} 
+		\right)
+		G_{1}^{2}
+	\right\}\\
+	&+ 
+	\sup
+		\limits_{
+			(I_{h},I_{a},S_{v},I_{v})\in \widetilde{\mathbf{D}}
+		}
+		\frac{1}{2} s
+		\left\{
+			\left( 
+				\theta_{a}^{2}K^{4}
+				+3\theta_{v_{a}}^{2}A^{2}K^{2} 
+			\right)
+			G_{2}^{2}
+		\right\}
+	\\
+	&= 5c~.
+\end{align*}
+As we know, 
+	$
+		V\left( I_{h},I_{a},S_{v},I_{v} \right)\geq 5
+	$ for all 
+	$
+		\left( I_{h},I_{a},S_{v},I_{v} \right)\in \widetilde{\mathbf{D}}
+	$, and since 
+	$
+		5c \geq V
+		\left( 
+			I_{h},I_{a},S_{v},I_{v}
+		\right)
+	$, 
+	we deduce that 
+	$
+		cV
+		\left( 
+			I_{h},I_{a},S_{v},I_{v} 
+		\right)
+		\geq 
+		\mathcal{L}V
+		\left( 
+			I_{h},I_{a},S_{v},I_{v} 
+		\right)
+	$. 
+%
+
+	Now we construct a crescent collection of subsets of $\mathbf{D}$ in order to
+satisfies the conditions of \Cref{theo.ap.2}.
+For each $n \in \N$ define
+$$
+	\mathbf{D}_n:=[e^{-n}, H-e^{-n}] \times
+			[e^{-n}, A-e^{-n}] \times
+			[e^{-n}, K-e^{-n}] \times
+			[e^{-n}, K-e^{-n}].
+$$
+Let 
+$$
+	\widetilde{\mathbf{D}}\backslash\mathbf{D}_{n} 
+	= (0,e^{-n})
+	\bigcup (H-e^{-n},H)
+	\times (0,e^{-n})
+	\bigcup (A-e^{-n},A)
+	\times (0,e^{-n})
+	\bigcup(K-e^{-n},K)
+	\times (0,e^{-n})
+	\bigcup (K-e^{-n},K) .
+$$ 
+Since the real valued function $f(x):= x - \ln(x)$ satisfies
+$$
+	f(x) \geq 1,\qquad \forall x>0,
+$$
+we deduce that
+\begin{align*}
+	V
+	\left(
+		 I_{h},I_{a},S_{v},I_{v}
+	\right)
+	&\geq (K-S_{v})
+	- \ln(K-S_{v})+ S_{v} 
+	- \ln S_{v}+3,%\\
+	&\text{ for all }
+		\left( 
+	I_{h},I_{a},S_{v},I_{v} 
+	\right)
+	\in 
+	\widetilde{\mathbf{D}}
+	\backslash\mathbf{D}_{n}.
+\end{align*}
+Moreover, the function $f(x)$ is increasing when 
+$x\in (K-e^{-n},K)$, then
+\begin{align*}
+	V
+	\left( 
+		I_{h},I_{a},S_{v},I_{v} 
+	\right) 
+	&\geq 
+		(K-K+e^{-n})- \ln(K-K+e^{-n}) + 4,\\
+	&\geq e^{-n} + n + 4,\\
+	&> n+4.
+\end{align*}
+Likewise, note that $f(x)$ decreases when $x\in (0,e^{-n})$, so
+\begin{align*}
+	V
+	\left( 
+		I_{h},I_{a},S_{v},I_{v} 
+	\right) &\geq e^{-n}- \ln(e^{-n}) + 4,\\
+&\geq e^{-n} + n + 4,\\
+&> n+4.
+\end{align*}
+Thus,
+\begin{align*}
+	V
+		\left( 
+			I_{h},I_{a},S_{v},I_{v} 
+		\right) > n+4,\qquad 
+		\text{for all } 
+		\left( 
+			I_{h},I_{a},S_{v},I_{v} 
+		\right)
+		\in \widetilde{\mathbf{D}} \backslash\mathbf{D}_{n}~.
+\end{align*}
+Hence, combining the  above inequalities we arrive at,
+\begin{equation}\label{eqn:v_condition}
+	\inf_{
+			\left(
+				I_{h},I_{a},S_{v},I_{v} 
+			\right) \in 
+			\widetilde{\mathbf{D}}
+			\backslash
+			\mathbf{D}_{n}}
+		V
+		\left( 
+			I_{h},I_{a},S_{v},I_{v} 
+		\right) > n+4, \quad \text{for each } n\in \N ~.
+\end{equation}
+%
+	Next we prove that $( I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t) )$ remains in 
+$\widetilde{D}$. Let 
+$
+	W
+	\left( 
+		I_{h},I_{a},S_{v},I_{v},t 
+	\right) = 
+	e^{-c(t-t_{0})}
+	V
+	\left(
+		I_{h},I_{a},S_{v},I_{v} 
+	\right)
+$
+defined on 
+$
+	\widetilde{\mathbf{D}}\times [t_{0},\infty)
+$ for $t_{0}\geq 0$ 
+fixed. Denote by $\tau(\mathbf{D}_n)$ the first exit time of solution
+$
+\left(
+	I_{h},I_{a},S_{v},I_{v} 
+\right)
+$ from the set $\mathbf{D}_n$
+and 
+$
+	\tau_{n}(t) := \min \{ t,\tau(\mathbf{D}_{n})\}
+$. 
+Since 
+$
+	\mathcal{L}V
+	\left( 
+		I_{h},I_{a},S_{v},I_{v} 
+	\right)
+	\leq 
+	cV
+	\left( 
+		I_{h},I_{a},S_{v},I_{v} 
+	\right)
+$, 
+we have that, 
+$
+	\mathcal{L}
+	W
+	\left( 
+		I_{h},I_{a},S_{v},I_{v},t 
+	\right)
+	\leq 0
+$ for 
+$
+	\left( 
+		I_{h},I_{a},S_{v},I_{v},t 
+	\right)
+	\in 
+	\widetilde{\mathbf{D}}
+	\times [t_{0},\infty)
+$.
+In order  to get a upper bound for 
+$$
+	\mathbb{E}W
+	\left( 
+		I_{h}(\tau_{n}),I_{a}(\tau_{n}),S_{v}(\tau_{n}),I_{v}(\tau_{n}),\tau_{n}  
+	\right),
+$$ 
+we apply the Dynkin's formula, then
+\begin{align*}
+	\mathbb{E}
+	W
+	\left( 
+		I_{h}(\tau_{n}),I_{a}(\tau_{n}),S_{v}(\tau_{n}),I_{v}(\tau_{n}),\tau_{n}  
+	\right) 
+	&= \mathbb{E}
+	W
+	\left( 
+		I_{h}(t_{0}),I_{a}(t_{0}),S_{v}(t_{0}),I_{v}(t_{0}),t_{0}  
+	\right)\\
+	&+ 
+	\mathbb{E}
+	\int_{\tau_{n}}^{t_{0}}
+		\mathcal{L} W 
+		\left(
+			I_{h}(s),I_{a}(s),S_{v}(s),I_{v}(s),s
+		\right)ds
+	\\ %
+	&\leq 
+	\mathbb{E}
+	W
+	\left( 
+		I_{h}(t_{0}),I_{a}(t_{0}),S_{v}(t_{0}),I_{v}(t_{0}),t_{0}
+	\right)
+	\\ %
+	&= 
+	\mathbb{E}
+	V
+	\left( 
+		I_{h}(t_{0}),I_{a}(t_{0}),S_{v}(t_{0}),I_{v}(t_{0})
+	\right).
+\end{align*}
+Since 
+$
+	\mathbf{D}_{n}
+	\subset \mathbf{D}_{n+1} 
+$, 
+we have that 
+\begin{align*}
+	\mathbb{P}
+	\left(
+		\tau(\widetilde{\mathbf{D}}) < t 
+	\right)
+	&\leq 
+	\mathbb{P}
+	\left(
+		\tau(\widetilde{\mathbf{D}}_{n})<t 
+	\right)
+	\\ %
+	&= 
+	\mathbb{E}
+	(
+		\mathbbm{1}_{\tau_{n}<t})
+	\\ %
+	&\leq 
+	\mathbb{E}
+	\left( 
+		e^{c(t-\tau_{n})}
+		\frac{
+			V
+			\left(
+				I_{h}(\tau_{n}),I_{a}(\tau_{n}),S_{v}(\tau_{n}),I_{v}(\tau_{n})
+			\right)
+		}{
+			\inf\limits_{
+				\left( 
+					I_{h},I_{a},S_{v},I_{v}
+				\right) 
+				\in 
+				\widetilde{\mathbf{D}}
+				\backslash \mathbf{D}_{n}
+			}
+			V\left( 
+				I_{h},I_{a},S_{v},I_{v} 
+			\right)} 
+		\mathbbm{1}_{\tau_{n}<t}
+	\right)\\
+	&\leq 
+		\frac{e^{c(t-t_{0})}
+			\mathbb{E}V
+			\left( 
+				I_{h}(t_{0}),I_{a}(t_{0}),S_{v}(t_{0}),I_{v}(t_{0})
+			\right)
+		}
+		{
+			\inf
+			\limits_{
+				\left( 
+					I_{h},I_{a},S_{v},I_{v} 
+				\right)
+				\in
+				\widetilde{\mathbf{D}}
+				\backslash 
+				\mathbf{D}_{n}} 
+				V
+				\left( 
+					I_{h},I_{a},S_{v},I_{v} 
+				\right)}
+		\\ %
+		&\leq
+		\frac{
+			e^{c(t-t_{0})}
+			\mathbb{E} V
+			\left(
+				I_{h}(t_{0}),I_{a}(t_{0}),S_{v}(t_{0}),I_{v}(t_{0})
+			\right)}
+		{n+4},
+\end{align*}
+then, letting $n \to \infty$, we see that
+$\mathbb{P}(\tau_{n}<t)\rightarrow 0$, 
+for all 
+$
+	\left( 
+		I_{h}(t_{0}),I_{a}(t_{0}),S_{v}(t_{0}),I_{v}(t_{0})
+	\right)\in \mathbf{D}_{n}
+$ 
+and fixed $t\in [t_{0},\infty)$.
+Furthermore, note that
+\begin{align*}
+	\P(\tau(\widetilde{\mathbf{D}})<t)
+		&=
+			\lim
+			\limits_{n\rightarrow\infty}
+			\mathbb{P}(\tau(\mathbf{D}_{n})<t)=0,
+\end{align*}
+so, we conclude that,
+\begin{align*}
+	\mathbb{P}(\tau(\widetilde{\mathbf{D}})=\infty)=1.
+\end{align*}
+With this, we have proved that for all $t \geq 0$ and initial
+condition on $\widetilde{\mathbf{D}}$, the solution
+$\left(I_{h},I_{a},S_{v},I_{v}\right)$
+remains on $\widetilde{\mathbf{D}}$ with probability one --- in other words,  
+the solution process 
+$
+	\left\{
+		\left(
+			I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t)
+		\right), t\geq t_0 \geq 0
+	\right\}
+$
+is a.s. regular (or invariant) on $\widetilde{\mathbf{D}}$
+in the sense of \citet[Definition 2.1]{Schurz2007}.
+Moreover, for each set 
+$
+	\mathbf{E}_n:=\{(t,x):t\geq t_{0}, 
+	x\in\widetilde{\mathbf{D}}_{n}\}
+$, the coefficients $b_{0}(X(t))$, $b_{1}(X(t))$ satisfies all conditions of
+\Cref{thm:existence}, then exist a unique continuous
+solution 
+$
+	\left\{
+		\left(
+			I_{h}(t),I_{a}(t),S_{v}(t),I_{v(t)}
+		\right)_n, t\geq t_0 \geq 0
+	\right\}
+$,
+which coincides a.s. with $\left(I_{h},I_{a},S_{v},I_{v}\right)$
+up to time $\tau_n$, that is
+$$
+	\P
+		\left\{
+			\sup_{t_0\leq t \leq \tau_n}
+			\norm{
+				\left(
+					I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t)
+				\right)
+				-
+				\left(
+					I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t)
+				\right)_n
+			}>0
+		\right\}=0.
+$$
+Furthermore, $\widetilde{\mathbf{D}}_{n}$ satisfies conditions of 
+\Cref{theo.ap.2}, then we concluded that
+$
+	\left(
+		I_{h}(t),I_{a}(t),S_{v}(t),I_{v(t)}
+	\right)
+$ is the unique global continuous solution of SDE's \eqref{eq.2} and this
+solution is invariant respect to $\widetilde{\mathbf{D}}$.
+
+	Note that sets with constraints as, $I_{h}=0$, $I_{a}=0$, $I_{v}=0$ and 
+$S_{v}=K$ are not in $\widetilde{\mathbf{D}}$. So, we discuss these in the 
+following cases
+\begin{enumerate}[{(CASE-}I)]
+\item 
+	To fix ideas, we first examine the $I_{h}=0$ constraint.
+	In this case SDE~\eqref{eq.2} becomes
+	\begin{equation}\label{eq.3}
+		\begin{aligned}
+			dI_{a} &= 
+			\left[
+				\alpha_{a}I_{v}\left(A-I_{a}\right)-\mu_{a}I_{a}
+			\right]dt 
+			+ F_{2}\theta_{a}I_{v}
+			\left(
+				A-I_{a}
+			\right)dW_{2}(t)
+			\\
+			dS_{v} 
+				&= 
+					\left[
+						\Lambda_{v} T_{v}
+						-\alpha_{v_{a}}I_{a}S_{v}
+						-
+						\left(
+							\mu_{v} +r_{k}T_{v}
+						\right)S_{v}
+					\right]dt 
+					-F_{2}\theta_{v_{a}}I_{a}S_{v}dW_{2}(t)
+					\\
+			dI_{v} 
+				&= 
+				\left[
+					\alpha_{v_{a}}I_{a}S_{v}-\left(\mu_{v} 
+					+r_{k}T_{v}\right)I_{v}
+				\right]dt 
+				+ F_{2}\theta_{v_{a}}I_{a}S_{v}dW_{2}(t) ~.
+		\end{aligned}
+	\end{equation}
+	Let 
+	$
+		\mathbf{D}_{1} = 
+			\{ 
+				\left( 
+					I_{a},S_{v},I_{v} \right)
+					\in \mathbb{R}^{3};
+					\ 0\leq t : \ 0< I_{a} < A,\ 0< S_{v} < K,\ 0< I_{v}< K,\ 
+					S_{v}+I_{v}\leq K 
+				 \}
+		$ 
+		the set over which is defined the SDE~\eqref{eq.3}, 
+		and 
+		$$
+			V_{1}
+			\left( 
+				I_{a},S_{v},I_{v} 
+			\right) 
+			= I_{a} 
+				+ (A-I_{a}) 
+				- \ln(A-I_{a}) 
+				+ (K-S_{v}) 
+				-\ln(K-S_{v}) 
+				+ S_{v} 
+				- \ln S_{v} 
+				+ I_{v} 
+				+ (K-I_{v}) 
+				- \ln(K-I_{v}).
+		$$
+		Following the above argument, we can prove the 
+		invariance of $\mathbf{D}_{1}$, global existence, continuous 
+		and uniqueness of the solution. Furthermore, this reasoning applies
+		to the cases with $I_{a}=0$ and $I_{v}=0$ constraints.
+		\item
+			Now, if $S_{v}=K$, then SDE~\eqref{eq.2} becomes
+			\begin{equation}\label{eq.7}
+				\begin{aligned}
+					dI_{h} &= -\mu_{h}I_{h}dt\\
+					dI_{a} &= -\mu_{a}I_{a}dt,
+				\end{aligned}
+			\end{equation}
+		since $S_{v}=K$ implies $I_v=0$. Also, note that 
+		\Cref{eq.7} is lineal, and consequently has a unique continuous global 
+		solution in 
+		$
+		\mathbf{D}_{5} = \{ \left( I_{h},I_{a} \right)\in \mathbb{R}^{2};\ 
+		0\leq t 
+		: \ 0< I_{h} < H,\ 0< I_{a} < A\}
+		$.
+	\end{enumerate}
+	The same proof works for sub-domains with combinations of mentioned 
+	constraints.
+\end{proof}

@@ -1,0 +1,61 @@
+\paragraph{Motivation}
+	Now days, vector diseases represents the principal cause of death in 
+many sub development countries. A combination of low resources, climate
+variations and lack of efficient health services, amplifies its prevalence. So, 
+design tools to planing strategies under real conditions is crucial. However
+this phenomena depends on many and very intricate variables. 
+By this reason, not exist a general model which  describe or predict in a
+acceptable way, the essence of this complex system. Instead, a lot of literature
+focus on describe a specific characteristic under restrictive or unrealistic 
+conditions. We believe that to incorporate uncertainty is an clever option
+~--- resume the effect of many variables as "noise" ~---to produce a more 
+realistic model.
+
+	
+
+\todo{Find other diseases, structure and use Chagas 
+	like example, leismaniasis, peste (sin tratamiento).}
+\paragraph{Previous and related work}
+	Essentially, in literature exist two main alternatives 
+	for incorporate environmental noise. The first alternative, considers as step 
+	one, to describe the disease transitions with a discrete Markov chain. Next,
+	letting discrete time to zero, one gets a stochastic differential equation 
+	(SDE). We refer to [Allen's work] and reference there in. The other approach, 
+	perturbs a target parameter $\phi$ of a given  ordinary differential equation 
+	(ODE) with a Wienner process. To be precise, for a differential time 
+	$(t+dt)$  
+	one  stochastically perturbs $\phi dt$ with a Wienner process of intensity 
+	$\sigma$. So, one substitute $\phi dt$ by $\phi dt+\sigma dW_t$  to get a SDE
+	model. We mention as representative works in this line to [Gray Mao,
+	 Greeendhald, Liu Cai].
+
+		Environmental noise could dramatically changes the nature of a deterministic
+	equilibrium. For example, Mao et al. (2002) found that 
+	even the presence of a tiny noise can suppress a potential population 
+	explosion. Hence, it is natural to investigate effects of environment random 
+	fluctuations in a population dynamics.
+
+\paragraph{Results}
+	We follow ideas of [Schurz] in order to extend a SIS deterministic epidemic 
+	model applying a general stochastic perturbation. In this sense our results 
+	follows the same style of [Tosun, Cai, Gray. ]. However all mentioned
+	literature do not consider multi host structure o vectorial disease 
+	transmission. In this line we direct our research. Concretely, 
+	our main contributions are:
+	\begin{itemize}
+		\item 
+			The study a disease transmitted by vector with two different hosts, which 
+			is a new approach on epidemic SDE models.
+		\item
+			We consider a family of functions dependent on the states variables
+			as noise intensities. In this way, we obtain sufficient criteria to 
+			guarantee extinction and persistence of the disease.
+		\item 
+			According to our numeric simulations, we observe a mean behavior
+			which is very similar to our deterministic base dynamics.
+			For example, our numeric mean estimations suggest that deterministic 
+			free disease and endemics equilibriums remains close in large time from
+			its stochastic extension.
+	\end{itemize}
+	
+\paragraph{Outline}

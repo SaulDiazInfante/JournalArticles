@@ -1,0 +1,698 @@
+	In the above section, we give conditions to assure disease extinction. 
+Now, we study other important characteristic in epidemiology ---~the
+disease persistence. We know that if $\mathcal{R}_{0}>1$, 
+then system~\eqref{eq.1} has an unique endemic equilibrium. 
+Four stochastic extension \eqref{eq.2}, we give conditions to guarantee 
+infected population persistence in order to establish disease presence. 
+To this end, first we enunciate the following.
+\begin{definition}[{\citet[pg.~936]{Liu2010}}] \label{def.pers}
+	Let us denote by $p(t)$ the  population size at time $t$. 
+	If
+	$
+		\liminf\limits_{t\rightarrow\infty}
+		\frac{1}{t}
+		\int\limits_{0}^{t}p(s)ds >0
+	$
+	 a.s., then $p(t)$ is said to be stochastic strongly persistent in the mean.
+\end{definition}
+%
+\begin{lemma}[{\citet[Lemma 5.1]{Ji2014}}]\label{lem:log_Gronwall}
+		Let $p\in \mathcal{C}([0,+\infty)\times\Omega,(0,+\infty))$. If there exist 
+	positive constants 
+	$
+		\lambda_{0}
+	$, 
+	$
+		\lambda
+	$, such that 
+	$$
+		\ln(p(t))\geq 
+			\lambda t - \lambda_{0}
+			\int\limits_{0}^{t} 
+				p(s)
+			ds 
+		+ 
+		F(t),\text{ a.s.}
+	$$
+	for all $t\geq 0$, where 
+	$
+		F\in \mathcal{C}([0,+\infty)\times\Omega,\mathbb{R})
+	$ 
+	and 
+	$
+		\lim
+			\limits_{t\to \infty}\frac{F(t)}{t}=0
+	$ 
+	a.s.,
+	 then
+	\begin{align*}\label{lem.marting}
+		\liminf
+		\limits_{t\rightarrow\infty}
+			\frac{1}{t}
+			\int\limits_{0}^{t}
+				p(s)
+			ds 
+			&\geq 
+				\frac{\lambda}{\lambda_{0}}\text{ a.s.}
+	\end{align*}
+\end{lemma}
+To simplify notation, we write
+\begin{align*}
+	c_{1}= 
+		\min
+		\left\{
+			\alpha_{h}H
+			+\alpha_{a}A,
+			\frac{\alpha_{v_{h}}K}{2},
+			\frac{\alpha_{v_{a}}K}{2}
+		\right\},
+		&&
+		c_{2}= 
+			\max
+			\left\{
+				\mu_{h},
+				\mu_{a}, 
+				\Lambda_{v}
+			\right\},
+		&&
+		c_{3}= 
+			\max
+				\left\{ 
+					c_{31}, c_{32}, c_{33},
+					c_{34}, c_{35} 
+				\right\},
+\end{align*}
+where,
+\begin{align*}
+	&c_{31} = 
+		\sup
+			\limits_{(I_{h},I_{a},S_{v},I_{v})\in\mathbf{D}}
+			\left\{
+				F_{1}^{2}\theta_{h}^{2}H^{2}+F_{2}^{2}\theta_{a}^{2}A^{2}
+			\right\}, 
+	&&c_{32} = \sup\limits_{(I_{h},I_{a},S_{v},I_{v})\in\mathbf{D}}
+		\left\{
+			F_{1}^{2}\theta_{v_{h}}^{2}K^{2}
+		\right\},\\
+	&c_{33} = 
+		\sup
+			\limits_{(I_{h},I_{a},S_{v},I_{v})\in\mathbf{D}}
+			\left\{
+				F_{2}^{2}\theta_{v_{a}}^{2}K^{s2}
+			\right\},
+	&&c_{34} = 
+		\sup
+			\limits_{(I_{h},I_{a},S_{v},I_{v})\in\mathbf{D}}
+			\left\{F_{1}^{2}\theta_{h}H\theta_{v_{h}}K\right\},\\
+	&c_{35} = 
+		\sup\limits_{(I_{h},I_{a},S_{v},I_{v})\in\mathbf{D}}
+		\left\{
+			F_{2}^{2}\theta_{a}A\theta_{v_{a}}K
+		\right\}.
+\end{align*}
+%
+\begin{theorem}\label{theo:persist}
+	Let 
+	$
+	\left(
+	I_{h}(t_0),, I_{a}(t_0), S_{v}(t_0), I_{v}(t_0)
+	\right)
+	\in \mathbf{D}$. 
+	If 
+	$2c_{1}-2c_{2}-c_{3}>0$, then the infected population of
+	SDE~\eqref{eq.2}
+	$
+			I_{h}(t) +I_{a}(t) + I_{v}(t)
+	$ is stochastic strong persistent in the mean.
+\end{theorem}
+\begin{proof}
+		The main idea of the proof is to apply 
+		\Cref{lem:log_Gronwall}. To this 
+	end, we use our constants $c_1$, $c_2$, $c_3$ in 
+	order to argue the required hypothesis.
+	By It\^o's  formula
+	\begin{align*}
+		d(\ln(I_{h}+I_{a}+I_{v})) &= 
+		\left[
+			\left(
+				\frac{
+					\alpha_{h}I_{v}(H-I_{h})
+					-\mu_{h}
+				}{I_{h}+I_{a}+I_{v}}
+			\right)
+			+
+			\left(
+				\frac{
+					\alpha_{a} I_{v} (A-I_{a})
+					-\mu_{a}I_{a}
+				}
+				{
+					I_{h} + I_{a} + I_{v}
+				}
+			\right)
+		\right.
+			\\ %
+			&+
+		\left.
+			\left( 
+				\frac{
+					(
+						\alpha_{v_{h}} I_{h}
+						+ \alpha_{v_{a}} I_{a}
+					)
+					S_{v}
+				}
+				{
+					I_{h}
+					+I_{a}
+					+I_{v}
+				}
+			\right)
+			-
+			\left(
+				\frac{
+					(
+						\mu_{v} 
+						+r_{k} T_{v}
+					) I_{v}
+				}
+				{
+					I_{h} 
+					+ I_{a}
+					+I_{v}
+				} 
+			\right)
+		\right] 
+		dt
+		\\ 
+		&-
+		\frac{1}{2}
+		\left[
+			\left(
+				\frac{
+					F_{1}
+					(
+						\theta_{h} I_{v} (H-I_{h})
+						+\theta_{v_{h}} I_{h} S_{v}
+					)
+				}
+				{
+					I_{h} + I_{a} + I_{v}
+				}
+			\right)^{2}
+			+
+			\left(
+				\frac{
+					F_{2}
+					(
+						\theta_{a} I_{v} 
+						(A - I_{a})
+						+ \theta_{v_{a}} I_{a} S_{v}
+					)
+				}
+				{
+					I_{h} + I_{a} + I_{v}
+				}
+			\right)^{2}
+		\right]
+		dt
+		\\ %
+		&+ 
+		\left( 
+			\frac{
+				F_{1}
+				(
+					\theta_{h} I_{v} (H-I_{h})
+					+\theta_{v_{h}} I_{h} S_{v}
+				)
+			}
+			{
+				I_{h} + I_{a} + I_{v}
+			}
+		\right)
+		dW_{1}
+		+
+		\left( 
+			\frac{
+				F_{2}
+				(
+					\theta_{a} I_{v} (A-I_{a})
+					+\theta_{v_{a}} I_{a} S_{v}
+				)
+			}
+			{
+				I_{h} + I_{a} + I_{v}}
+		\right)
+		dW_{2}  ~.
+	\end{align*}
+%
+	Next, using $-(\mu_{v} +r_{k}T_{v})\geq -\Lambda_{v}$, we get
+	\begin{align*}
+		d(
+			\ln(I_{h} + I_{a} + I_{v})
+		) 
+		&\geq 
+			\left[ 
+				\left(
+					\frac{
+						\alpha_{h} I_{v} (H-I_{h})
+						-\mu_{h}} {I_{h} + I_{a} + I_{v}}
+				\right)
+				+
+				\left(
+					\frac{
+						\alpha_{a} I_{v} (A-I_{a})
+						-\mu_{a} I_{a}
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right)
+			\right.
+				\\ %
+				&-
+			\left.
+				\left(
+					\frac{
+						\Lambda_{v} I_{v}
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right)
+				+
+				\left(
+					\frac{
+						(
+							\alpha_{v_{h}} I_{h}
+							+ \alpha_{v_{a}} I_{a}
+						)
+						\left(
+							T_{v} - I_{v}
+						\right)
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right)
+			\right]
+			dt 
+			\\ &
+			- 
+			\frac{1}{2}
+			\left[
+				\left(
+					\frac{
+						F_{1}
+						(
+							\theta_{h} I_{v} (H-I_{h})
+							+\theta_{v_{h}} I_{h} S_{v}
+						)
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					} 
+				\right)^{2}
+				+
+				\left(
+					\frac{
+						F_{2}
+						(
+							\theta_{a} I_{v} (A-I_{a})
+							+\theta_{v_{a}} I_{a} S_{v}
+						)
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right)^{2}
+			\right]
+			dt
+			\\
+			&+
+			\left(
+				\frac{
+					F_{1}
+					(
+						\theta_{h} I_{v} (H-I_{h})
+						+\theta_{v_{h}} I_{h} S_{v}
+					)
+				}
+				{
+					I_{h} + I_{a} + I_{v}
+				}
+			\right)
+			dW_{1}
+			+
+			\left( 
+				\frac{
+					F_{2}
+					(
+						\theta_{a} I_{v} (A-I_{a})
+						+\theta_{v_{a}} I_{a} S_{v})
+				}
+				{
+					I_{h} + I_{a} + I_{v}
+				}
+			\right)
+			dW_{2} ~.
+	\end{align*}
+%
+	Applying definition of $c_{2}$ and $c_{3}$, we have
+	\begin{align*}
+		d(\ln(I_{h}+I_{a}+I_{v})) 
+			&\geq 
+				\left(
+					\frac{
+						\left(
+							\alpha_{h}H + \alpha_{a} A 
+						\right) I_{v}
+						+
+						(
+							\alpha_{v_{h}} I_{h}
+							+ \alpha_{v_{a}} I_{a}
+						) 
+						T_{v}
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right)
+				dt
+				-
+				\left(
+					\frac{
+						\left(
+							\alpha_{h} + \alpha_{v_{h}}
+						\right)
+						I_{v} I_{h}
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right)
+				dt
+				\\
+				&-
+				\left(
+					\frac{
+						\left(
+							\alpha_{a} + \alpha_{v_{a}}
+						\right)
+						I_{v} I_{a}
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right)
+				dt
+				- c_{2} dt
+				-
+				\frac{c_{3}}{2}
+				\left(
+					\frac{
+						I_{v}^{2} + I_{h}^{2} 
+						+ I_{a}^{2} + 2I_{v}I_{h} + 2I_{v}I_{a}
+					}
+					{
+						(
+							I_{h} + I_{a} + I_{v}
+						)^{2}}
+					\right)
+					dt\\
+				&+
+				\left(
+					\frac{
+						F_{1}
+						(
+							\theta_{h} I_{v} (H-I_{h})
+							+ \theta_{v_{h}} I_{h} S_{v}
+						)
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right
+				)
+				dW_{1}
+				+
+				\left(
+					\frac{
+						F_{2}
+						(
+							\theta_{a} I_{v} (A-I_{a})
+							+ \theta_{v_{a}} I_{a} S_{v})
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right)
+				dW_{2} ~.
+	\end{align*}
+	We now integrate on both sides to deduce that,
+	\begin{align*}
+		\ln(I_{h} + I_{a} + I_{v})
+		&\geq
+			\ln(
+				I_{h}(0) + I_{a}(0) + I_{v}(0)
+			)
+			-
+			\left(
+				c_{2} 
+				+
+				\frac{c_{3}}{2}
+			\right) t 
+			+
+			\int
+				\limits_{0}^{t}
+					\left(
+						\frac{
+							\left(
+								\alpha_{h}H + \alpha_{a}A
+							\right)I_{v}
+						}
+						{
+							I_{h} + I_{a} + I_{v}
+						}
+					\right
+				)ds
+			\\
+			&+ 
+			\int\limits_{0}^{t}
+				\left(
+					\frac{
+						(
+							\alpha_{v_{h}} I_{h}
+							+ \alpha_{v_{a}} I_{a})T_{v}
+					}
+					{
+						I_{h} + I_{a} + I_{v}}
+				\right)
+				ds
+				-
+				\left( 
+					\frac{
+						\alpha_{h} + \alpha_{v_{h}} 
+						+ \alpha_{a} + \alpha_{v_{a}}
+					}
+					{4} 
+				\right)
+				\int\limits_{0}^{t}
+					(
+						I_{h}+I_{a}+I_{v}
+					)
+				ds
+			\\
+			&+
+			\int
+				\limits_{0}^{t}
+				\left(
+					\frac{
+						F_{1}
+						(
+							\theta_{h} I_{v} (H-I_{h})
+							+ \theta_{v_{h}} I_{h}S_{v})
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right)
+				dW_{1}(s)%\\
+				+
+				\int
+				\limits_{0}^{t}
+					\left(
+						\frac{
+							F_{2}
+								(
+									\theta_{a} I_{v} (A-I_{a})
+									+ \theta_{v_{a}} I_{a} S_{v})
+						}
+						{
+							I_{h} + I_{a} + I_{v}}
+					\right)
+					dW_{2}(s) ~.
+	\end{align*}
+	Since function $T_{v}(\cdot)$ is increasing  for all initial condition 
+	$T_{v}(0)\in (0,K]$, there exists $t_{K}\geq 0$, such that 
+	$$
+		T_{v}(s) \geq \frac{K}{2}, \quad \text{ for all } s\geq t_{K} ~.
+	$$
+	Consequently, if $t\geq t_K$, then
+	\begin{align}%\label{eqn:to_bound_mith_M}
+		\ln(
+			I_{h} + I_{a} + I_{v}
+		)
+			&\geq 
+				\ln(
+					I_{h}(0)+I_{a}(0)+I_{v}(0)
+				)
+				-
+				\left(
+					c_{2}
+					+
+					\frac{c_{3}}{2}
+				\right)t 
+				+
+				\int
+				\limits_{t_{K}}^{t}
+					\left(
+						\frac{
+							\left(\alpha_{h}H 
+							+\alpha_{a} A
+							\right)I_{v}
+						}
+						{
+							I_{h} + I_{a} + I_{v}
+						}
+					\right)
+					ds \notag
+					\\
+				&+
+				\int
+					\limits_{t_{K}}^{t}
+						\left(
+							\frac{
+								(
+									\alpha_{v_{h}} I_{h}
+									+ \alpha_{v_{a}} I_{a}
+								)
+								\frac{K}{2}
+							}
+							{
+								I_{h}+I_{a}+I_{v}
+							}
+						\right)
+				ds
+				-
+				\left(
+					\frac{
+						\alpha_{h} + \alpha_{v_{h}}
+						+ \alpha_{a} + \alpha_{v_{a}}
+					}{4}
+				\right)
+				\int \limits_{0}^{t}
+				(
+					I_{h} + I_{a} + I_{v}
+				)
+				ds 
+				\\
+				&+
+				\int\limits_{0}^{t}
+					\left(
+						\frac{
+							F_{1}
+							(
+								\theta_{h} I_{v} (H-I_{h})
+								+ \theta_{v_{h}} I_{h}S_{v})
+						}
+						{
+							I_{h} + I_{a} + I_{v}
+						}
+					\right)
+					dW_{1}(s)
+				+
+				\int
+				\limits_{0}^{t}
+				\left(
+					\frac{
+						F_{2}
+						(
+							\theta_{a} 
+							I_{v} (A-I_{a})
+							+ 
+							\theta_{v_{a}} I_{a}S_{v}
+						)
+					}
+					{
+						I_{h} + I_{a} + I_{v}
+					}
+				\right)dW_{2}(s) ~. \notag
+	\end{align}
+	For abbreviation, we write
+	\begin{align*}
+		M_0^{t_K} &:=
+		\ln(I_{h}(0) + I_{a}(0) + I_{v}(0)) - c_{1}t_{K},
+		\\ 
+		M_1(t) &:=
+			\int\limits_{0}^{t}
+			\left(
+				\frac{F_{1}
+				(
+					\theta_{h} I_{v}
+					(H-I_{h})
+					+\theta_{v_{h}}I_{h}S_{v})
+				}
+				{
+					I_{h} + I_{a} + I_{v}
+				}
+			\right)
+			dW_{1}(s)
+			+
+			\int\limits_{0}^{t}
+			\left(
+				\frac{
+					F_{2}
+					(
+						\theta_{a}I_{v}(A-I_{a})
+						+\theta_{v_{a}}I_{a}S_{v}
+					)
+				}
+				{
+					I_{h} + I_{a} + I_{v}}
+			\right)dW_{2}(s) ~.
+	\end{align*}
+	Since $t_K$ is fixed and finite, we see that
+	$$
+		\lim\limits_{t \to \infty}
+			\frac{M_0^{t_K}}{t} = 0
+			~.
+	$$
+	Furthermore, the strong law of large numbers for martingales 
+	\citep[see e.g.,][Thm. 3.4]{Mao2007} implies
+	\begin{align*}
+		\lim
+			\limits_{t \to \infty}\frac{M_1(t)}{t}=0  \quad \text{a.s.}
+	\end{align*}
+	%
+	Note that by hypothesis $ 4c_1 - 4 c_2 - 2 c_3 >0$.
+	Therefore, applying \Cref{lem:log_Gronwall},
+	with 
+	\begin{align*}
+		p(t)= 
+			I_{h}(t)
+			+I_{a}(t)
+			+I_{v}(t),
+		&&F(t)= 
+			M_0^{t_K} + M_1(t), 
+		&&\lambda_0 =
+				\alpha_{h}
+				+\alpha_{a} 
+				+\alpha_{v_{h}}
+				+\alpha_{v_{a}},
+		&&\lambda = 
+			4c_1 - 4 c_2 - 2 c_3,
+	%
+	\end{align*}
+	we show stochastic persistence in the mean for our infected populations.
+\end{proof}

@@ -1,0 +1,282 @@
+	In an epidemiology context, one of the goals is to study  sceneries where a 
+disease extinguishes or persists. So in the following sections we stay 
+results in this direction. Let the threshold parameter
+\begin{align*}
+	\mathcal{R} &:= 
+	\frac{
+		\alpha_{h} \alpha_{v_{h}}
+	}{
+		\mu_{h} \mu_{v}
+	} H K
+	+
+	\frac{
+		\alpha_{a} \alpha_{v_{a}} 
+	}{
+		\mu_{a} \mu_{v}
+	} A K.
+\end{align*}
+In the next theorem, we give suitable conditions related with $\mathcal{R}$ 
+value to assure disease extinction. That is, under definition of 
+stochastic asymptotic stability in the large (definition \autoref{dfn:app3}) 
+and conditions of the SDE \eqref{eq.2} parameters
+we establish this kind of stability for the disease-free equilibrium point.
+
+\begin{theorem}\label{theo:GSAS}
+		If $\mathcal{R}<1$, then the disease-free equilibrium point, 
+	$x^{*}=(0,0,K,0)$, of SDE~\eqref{eq.2} is globally stochastically 
+	asymptotically stable in the large.
+\end{theorem}
+\begin{proof}
+	The main idea of the proof is to propose a Lyapunov function $(V)$ and verify 
+	the hypotheses of  \Cref{theo.ap.3}. Let 
+	\begin{align*}
+		V(I_{h},I_{a},S_{v},I_{v}) 
+			&:=
+			\frac{1}{2}\left( S_{v}+I_{v} - K \right)^{2}
+			+p_{1}I_{h} + p_{2}I_{a} + I_{v},		\\
+		p_{1} 
+			&=
+			\frac{\alpha_{v_{h}}}{\mu_{h}} K,		\quad
+		p_{2}
+			=
+			\frac{\alpha_{v_{a}}}{\mu_{a}} K.
+	\end{align*}
+	Note that function $V(I_{h},I_{a},S_{v},I_{v})$ is non-negative 
+	definite on $\mathbf{D}$. 
+	In order to satisfies \Cref{theo.ap.3}, we show that function 
+	$V(I_{h},I_{a},S_{v},I_{v})$ is radially unbounded. 
+	Define
+	\begin{align*}
+		q &= \min \left\lbrace \frac{1}{2},p_{1},p_{2} \right\rbrace,
+	\end{align*}
+	and arbitrarily fix $M>0$. Taking 
+	$
+		N > \max\left\lbrace \frac{2M+K^{2}}{q}, 
+		\sqrt{\frac{8M+4K^{2}}{q}} \right\rbrace >0
+	$
+	 such that 
+	$
+		N < \norm{(I_{h},I_{a},S_{v},I_{v})}
+	$ and 
+	non negative
+	$
+		I_{h},I_{a},S_{v},I_{v}, 
+	$
+	we have that
+	\begin{align*}
+		\frac{1}{2}
+		\left(
+			S_{v}+I_{v}-K 
+		\right)^{2} 
+		+ p_{1}I_{h} 
+		+ p_{2}I_{a} 
+		+ I_{v} > M.
+	\end{align*}
+	
+	Hence, letting $M \to \infty$, we deduce that
+	$
+		V(I_{h},I_{a},S_{v},I_{v})
+	$
+	is radially unbounded in the sense of \Cref{dfn:radial_unbonded}.
+	Now, applying the infinitesimal generator $\mathcal{L}$ (defined on 
+	\ref{appe.1}) to function $V(I_{h},I_{a},S_{v},I_{v})$, we obtain
+	\begin{align*}
+		\mathcal{L}V(I_{h},I_{a},S_{v},I_{v}) 
+			&= p_{1} 
+			\left[ 
+				\alpha_{h}I_{v}
+					\left(
+						H-I_{h}
+					\right)
+					-\mu_{h}I_{h} 
+			\right] 
+			+ p_{2} 
+			\left[
+				\alpha_{a}I_{v}
+				\left(
+					A-I_{a}
+				\right)
+				-\mu_{a}I_{a} 
+			\right]\\
+			&+ 
+			\left(
+				S_{v}+I_{v}-K 
+			\right)
+			\left[
+				\Lambda_{v} T_{v}
+				-
+				\left(
+					\alpha_{v_{h}}I_{h}
+					+\alpha_{v_{a}}I_{a}
+				\right)S_{v}
+				-
+				\left(
+					\mu_{v} 
+					+r_{k}T_{v}
+				\right)S_{v}
+			\right]
+			\\
+			&+
+			\left(
+				S_{v}
+				+I_{v}-K
+			\right)
+			\left[
+				\left(
+					\alpha_{v_{h}}I_{h}
+					+\alpha_{v_{a}}I_{a}
+				\right)
+				S_{v}
+				-
+				\left(
+					\mu_{v}
+					+r_{k}T_{v}
+				\right)
+				I_{v}
+			\right]
+			\\
+			&+ 
+			\left[
+				\left(
+					\alpha_{v_{h}}I_{h}
+					+\alpha_{v_{a}} I_{a}
+				\right)
+				S_{v}
+				-
+				\left(
+					\mu_{v}
+					+r_{k} T_{v}
+				\right)
+				I_{v}
+			\right]
+			\\
+			&+
+			\frac{1}{2}
+			\left(
+				1-1-1+1
+			\right)
+			S_{v}^{2}
+			\left(
+				F_{1}^{2}\theta_{v_{h}}^{2}I_{h}^{2}
+				+F_{2}^{2}\theta_{v_{a}}^{2}I_{a}^{2}
+			\right)
+			\\
+			&\leq
+			\left(
+				S_{v} + I_{v}-K
+			\right) rT_{v}
+			\left(
+				1 - \frac{T_{v}}{K}
+			\right)
+			+
+			\left(
+				p_{1} \alpha_{h}H
+				+ p_{2} \alpha_{a}A
+				- \mu_{v}
+			\right) I_{v}
+			\\
+			&-
+			r_{k} T_{v }I_{v}
+			+
+			\left(
+				K\alpha_{v_{h}}
+				- p_{1}\mu_{h}
+			\right)I_{h}
+			+
+			\left(
+				K \alpha_{v_{a}}
+				- p_{2} \mu_{a}
+			\right)I_{a}
+			\\ %
+			&-
+			\left(
+				p_{1} \alpha_{h}
+				+ \alpha_{v_{h}}
+			\right)
+			I_{v} I_{h}
+			-
+			\left(
+				p_{2} \alpha_{a}
+				+ \alpha_{v_{a}}
+			\right)
+			I_{v} I_{a} ~.
+	\end{align*}
+	Using $p_{1}$ and $p_{2}$ values, we observe that
+	\begin{align*}
+		\alpha_{v_{h}}K - p_{1}\mu_{h} &= 0\\
+		\alpha_{v_{a}}K - p_{2}\mu_{a} &= 0 ~.
+	\end{align*}
+	Thus, we obtain
+	\begin{align*}
+		\mathcal{L}V(I_{h},I_{a},S_{v},I_{v}) 
+			&\leq
+				\left(
+					S_{v} + I_{v} - K
+				\right)
+				rT_{v}
+				\left(
+					1 - \frac{T_{v}}{K}
+				\right)
+				+
+				\mu_{v}
+				\left(
+					\mathcal{R}-1
+				\right)
+				I_{v} 
+				- r_{k} T_{v} I_{v}
+				\\ %
+				&-
+				\left(
+					p_{1} \alpha_{h}
+					+\alpha_{v_{h}} 
+				\right)
+				I_{v}I_{h}
+				-
+				\left(
+					p_{2}
+					\alpha_{a}
+					+\alpha_{v_{a}} 
+				\right)
+				I_{v} I_{a}~.
+	\end{align*}
+	Finally, since $\mathcal{R}<1$, we concluded that 
+	$\mathcal{L}V(I_{h},I_{a},S_{v},I_{v})$ is negative-definite on 
+	$\mathbf{D}-\{x^{*}\}$. In this way, we have guaranteed the hypotheses of 
+	Theorem~\ref{theo.ap.3}.
+\end{proof}
+
+\begin{remark}
+	\todo{Introduction for $R_0$}
+		In mathematical epidemiology context, the basic reproduction number 
+	($\mathcal{R}_0$) yields when an epidemic occurs.
+	Applying the method of the next generation matrix \cite{VanDenDriessche2002}, 
+	we compute $\mathcal{R}_{0}$ for the deterministic system~\eqref{eq.1}
+	\begin{align}\label{eq:R_zero}
+		\mathcal{R}_{0} &= 
+		\sqrt{ 
+			\left(
+				\frac{z_{h}\theta_{h}H}{\mu_{v}+r}
+			\right)
+			\left(
+				\frac{z_{h}\theta_{v_{h}}K}{\mu_{h}} 
+			\right)
+			+\left(
+				\frac{z_{a}\theta_{v_{a}}K}{\mu_{a}}
+			\right)
+			\left(
+				\frac{z_{a}\theta_{a}A}{\mu_{v}+r}
+			\right)
+		}~.
+	\end{align}
+	We interpret this value as the average number of infected individuals 
+	indirectly generated by one infected vector during its whole infectious 
+	period. Qualitative analysis of the deterministic system \eqref{eq.1}, 
+	shows that if $\mathcal{R}_{0}$ is lower than one, then exist two 
+	equilibriums --- the trivial and disease-free points --- while if
+	 $\mathcal{R}_{0}$ is greater than one, then there is an endemic fixed point.
+	\todo{Think an interpretation}
+	Note that threshold parameter $\mathcal{R}_0$ always is lower than 
+	$\mathcal{R}$, therefore, if $\mathcal{R}$ is less than one, our stochastic 
+	system \eqref{eq.2} preserves this threshold behavior.
+	\todo{Can we say something about its stability?}
+\end{remark}

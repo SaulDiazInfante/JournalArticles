@@ -1,0 +1,105 @@
+\documentclass[3p,sort&compress]{elsarticle}
+\usepackage[USenglish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{ragged2e}
+\usepackage{amsthm}
+\usepackage{MnSymbol}
+\usepackage{bbm}
+\usepackage[titletoc,toc,title]{appendix}
+\usepackage{natbib}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{lineno}
+\usepackage{hyperref}
+\usepackage{todonotes}
+\usepackage{proba}
+\usepackage{cleveref}
+\usepackage{booktabs}
+\usepackage{subfig}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}%[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+\newtheorem{assumption}{Assumption}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\DeclareRobustCommand{\1}[1]{\ensuremath \mathbbm{1}_{\{#1\}}}
+\journal{Physica A}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\modulolinenumbers[1]
+\begin{document}
+	\begin{frontmatter}
+		\title{
+			Stochastic Asymptotic 
+			Analysis  of a Multi-Host 
+			Model with Vector Transmission.
+		}
+		\tnotetext[mytitlenote]{
+			Departamento de Matem\'aticas, divisi\'on de Posgrado.
+		}
+		\author{Manuel Adrian Acu\~na-Zegarra\fnref{myfootnote}}
+		\address{Radarweg 29, Amsterdam}
+		\fntext[myfootnote]{Since 1880.}
+%
+		\author[mymainaddress,mysecondaryaddress]{Sa\'ul D\'iaz-Infante}
+		\ead[url]{www.elsevier.com}
+		\author[mysecondaryaddress]%
+		{Daniel Olmos-Liceaga \corref{mycorrespondingauthor}}
+		\cortext[mycorrespondingauthor]{Corresponding author}
+		\ead{saul.diazinfante@unison.mx}
+		\address[mymainaddress]{Universidad de Sonora, Hermosillo, Sonora, M\'exico}
+		\address[mysecondaryaddress]{360 Park Avenue South, New York}
+		\begin{abstract}
+			\input{Sections/Frontmatter/abstract}
+		\end{abstract}
+		\begin{keyword}
+			Multi-host, persistence, extinction, stochastic perturbation,
+			vector transmission.
+		\end{keyword}
+	\end{frontmatter}
+	\linenumbers
+	\section{Introduction}
+		\input{Sections/Section1/Introduction}
+	\section{Stochastic Multi-Host Model}
+		\subsection{Deterministic SI Multi-Host Model}
+			\input{Sections/Section2/DeterministicModel}
+		\subsection{Stochastic Extension}
+			\label{sec:sto_ext}
+			\input{Sections/Section2/StochasticExtension}
+				\subsection{Existence and Regularity of Solutions}
+				\input{Sections/Section2/Regularity}
+				%\input{sections/section_2}
+	\section{
+		Global Stochastic Asymptotic Stability of the Disease-Free Fixed Point
+	}
+		\input{Sections/Section3/DiseaseFreeFixedPointStability}
+	\section{Stochastic Persistence}
+		\input{Sections/Section3/Persistence}
+	\section{Numerical Results}
+		\input{Sections/Section4/Numerical_Results}
+		\subsection{
+			Experiment 1: Extinction --- 
+			Disease-Free Equilibrium Numeric
+			Analysis
+		} 
+			\input{Sections/Section4/free_disease_numerics}
+		\subsection{Experiment 2: Persistence 
+		--- Illness Subservience}
+			\input{Sections/Section4/persistence_numerics}
+	\section{Conclusions and final comments}
+		\input{Sections/Section5/conclusions}
+		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\pagebreak
+	\appendix
+	\renewcommand*{\thesection}{\appendixname~\Alph{section}}
+	\renewcommand{\thetheorem}{\Alph{section}.\arabic{theorem}}
+	\renewcommand{\thedefinition}{\Alph{section}.\arabic{definition}}
+		\input{Sections/Appendix/appendix}
+	\section*{References}
+		\bibliographystyle{model6-num-names}
+		\bibliography{sde}
+\end{document}

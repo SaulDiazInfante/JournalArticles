@@ -1,0 +1,185 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\BIBand}{and}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\undefined \def\xfnm[#1]{\unskip,\space#1}\fi
+\makeatletter\def\@biblabel#1{#1.}\makeatother
+%Type = Article
+\bibitem[{Crawford and Kribs-Zaleta(2014)}]{Crawford2014}
+\bibinfo{author}{Crawford\xfnm[ B.]}, \bibinfo{author}{Kribs-Zaleta\xfnm[ C.]}.
+\newblock \bibinfo{title}{{A metapopulation model for sylvatic T. cruzi
+  transmission with vector migration.}}
+\newblock \emph{\bibinfo{journal}{Math Biosci Eng}}
+  \bibinfo{year}{2014};\bibinfo{volume}{11}(\bibinfo{number}{3}):\bibinfo{pages}{471--509}.
+\newblock \DOIprefix\doi{10.3934/mbe.2014.11.471}.
+%Type = Article
+\bibitem[{Mena-Lorca et~al.(2006)Mena-Lorca, Velasco-Hern{\'{a}}ndez and
+  Marquet}]{Mena-Lorca2006}
+\bibinfo{author}{Mena-Lorca\xfnm[ J.]},
+  \bibinfo{author}{Velasco-Hern{\'{a}}ndez\xfnm[ J.X.]},
+  \bibinfo{author}{Marquet\xfnm[ P.A.]}.
+\newblock \bibinfo{title}{{Coexistence in metacommunities: A tree-species
+  model}}.
+\newblock \emph{\bibinfo{journal}{Math Biosci}}
+  \bibinfo{year}{2006};\bibinfo{volume}{202}(\bibinfo{number}{1}):\bibinfo{pages}{42--56}.
+\newblock \DOIprefix\doi{10.1016/j.mbs.2006.04.005}.
+%Type = Article
+\bibitem[{Alvar et~al.(2012)Alvar, Vélez, Bern, Herrero, Desjeux, Cano,
+  Jannin, Boer and the WHO Leishmaniasis Control~Team}]{Alvar2012}
+\bibinfo{author}{Alvar\xfnm[ J.]}, \bibinfo{author}{Vélez\xfnm[ I.D.]},
+  \bibinfo{author}{Bern\xfnm[ C.]}, \bibinfo{author}{Herrero\xfnm[ M.]},
+  \bibinfo{author}{Desjeux\xfnm[ P.]}, \bibinfo{author}{Cano\xfnm[ J.]},
+  \bibinfo{author}{Jannin\xfnm[ J.]}, \bibinfo{author}{Boer\xfnm[ M.d.]},
+  \bibinfo{author}{the WHO Leishmaniasis Control~Team\xfnm[]}.
+\newblock \bibinfo{title}{Leishmaniasis worldwide and global estimates of its
+  incidence}.
+\newblock \emph{\bibinfo{journal}{PLOS ONE}}
+  \bibinfo{year}{2012};\bibinfo{volume}{7}(\bibinfo{number}{5}):\bibinfo{pages}{1--12}.
+\newblock \URLprefix \url{https://doi.org/10.1371/journal.pone.0035671}.
+  \DOIprefix\doi{10.1371/journal.pone.0035671}.
+%Type = Article
+\bibitem[{Cruz-Pacheco et~al.(2012)Cruz-Pacheco, Esteva and
+  Vargas}]{Cruz-Pacheco2012a}
+\bibinfo{author}{Cruz-Pacheco\xfnm[ G.]}, \bibinfo{author}{Esteva\xfnm[ L.]},
+  \bibinfo{author}{Vargas\xfnm[ C.]}.
+\newblock \bibinfo{title}{Control measures for chagas disease}.
+\newblock \emph{\bibinfo{journal}{Mathematical Biosciences}}
+  \bibinfo{year}{2012};\bibinfo{volume}{237}(\bibinfo{number}{1–2}):\bibinfo{pages}{49
+  -- 60}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0025556412000363}.
+  \DOIprefix\doi{https://doi.org/10.1016/j.mbs.2012.03.005}.
+%Type = Article
+\bibitem[{Singh et~al.(2013)Singh, Mishra, Singh and Singh}]{singh2013animal}
+\bibinfo{author}{Singh\xfnm[ N.]}, \bibinfo{author}{Mishra\xfnm[ J.]},
+  \bibinfo{author}{Singh\xfnm[ R.]}, \bibinfo{author}{Singh\xfnm[ S.]}.
+\newblock \bibinfo{title}{Animal reservoirs of visceral leishmaniasis in
+  india}.
+\newblock \emph{\bibinfo{journal}{The Journal of parasitology}}
+  \bibinfo{year}{2013};\bibinfo{volume}{99}(\bibinfo{number}{1}):\bibinfo{pages}{64--67}.
+%Type = Book
+\bibitem[{Khasminskii(2012)}]{Khasminskii2012}
+\bibinfo{author}{Khasminskii\xfnm[ R.]}.
+\newblock \bibinfo{title}{{Stochastic Stability of Differential Equations}};
+  vol.~\bibinfo{volume}{66} of \emph{\bibinfo{series}{Stochastic Modelling and
+  Applied Probability}}.
+\newblock \bibinfo{address}{Berlin, Heidelberg}: \bibinfo{publisher}{Springer
+  Berlin Heidelberg}; \bibinfo{year}{2012}.
+\newblock ISBN \bibinfo{isbn}{978-3-642-23279-4}.
+\newblock \URLprefix \url{http://link.springer.com/10.1007/978-3-642-23280-0}.
+  \DOIprefix\doi{10.1007/978-3-642-23280-0}.
+%Type = Article
+\bibitem[{Schurz and Tosun(2015)}]{Schurz2015}
+\bibinfo{author}{Schurz\xfnm[ H.]}, \bibinfo{author}{Tosun\xfnm[ K.]}.
+\newblock \bibinfo{title}{{Stochastic Asymptotic Stability of SIR Model with
+  Variable Diffusion Rates}}.
+\newblock \emph{\bibinfo{journal}{J Dyn Differ Equations}}
+  \bibinfo{year}{2015};\bibinfo{volume}{27}(\bibinfo{number}{1}):\bibinfo{pages}{69--82}.
+\newblock \DOIprefix\doi{10.1007/s10884-014-9415-9}.
+%Type = Article
+\bibitem[{Schurz(2007)}]{Schurz2007}
+\bibinfo{author}{Schurz\xfnm[ H.]}.
+\newblock \bibinfo{title}{Modeling, analysis and discretization of stochastic
+  logistic equations}.
+\newblock \emph{\bibinfo{journal}{International Journal of Numerical Analysis
+  and Modeling}}
+  \bibinfo{year}{2007};\bibinfo{volume}{4}(\bibinfo{number}{2}):\bibinfo{pages}{178--197}.
+%Type = Article
+\bibitem[{{Van Den Driessche} and Watmough(2002)}]{VanDenDriessche2002}
+\bibinfo{author}{{Van Den Driessche}\xfnm[ P.]},
+  \bibinfo{author}{Watmough\xfnm[ J.]}.
+\newblock \bibinfo{title}{{Reproduction numbers and sub-threshold endemic
+  equilibria for compartmental models of disease transmission}}.
+\newblock \emph{\bibinfo{journal}{Math Biosci}}
+  \bibinfo{year}{2002};\bibinfo{volume}{180}:\bibinfo{pages}{29--48}.
+\newblock \DOIprefix\doi{10.1016/S0025-5564(02)00108-6}.
+%Type = Article
+\bibitem[{Liu and Wang(2010)}]{Liu2010}
+\bibinfo{author}{Liu\xfnm[ M.]}, \bibinfo{author}{Wang\xfnm[ K.]}.
+\newblock \bibinfo{title}{{Persistence and extinction of a stochastic
+  single-specie model under regime switching in a polluted environment}}.
+\newblock \emph{\bibinfo{journal}{J Theor Biol}}
+  \bibinfo{year}{2010};\bibinfo{volume}{264}(\bibinfo{number}{3}):\bibinfo{pages}{934--944}.
+\newblock \DOIprefix\doi{10.1016/j.jtbi.2010.03.008}.
+%Type = Article
+\bibitem[{Ji and Jiang(2014)}]{Ji2014}
+\bibinfo{author}{Ji\xfnm[ C.]}, \bibinfo{author}{Jiang\xfnm[ D.]}.
+\newblock \bibinfo{title}{{Threshold behaviour of a stochastic SIR model}}.
+\newblock \emph{\bibinfo{journal}{Appl Math Model}}
+  \bibinfo{year}{2014};\bibinfo{volume}{38}(\bibinfo{number}{21}):\bibinfo{pages}{5067--5079}.
+\newblock \DOIprefix\doi{10.1016/j.apm.2014.03.037}.
+%Type = Book
+\bibitem[{Mao(2007)}]{Mao2007}
+\bibinfo{author}{Mao\xfnm[ X.]}.
+\newblock \bibinfo{title}{{Stochastic differential equations and
+  applications}}.
+\newblock \bibinfo{year}{2007}.
+\newblock ISBN \bibinfo{isbn}{9781904275343}.
+%Type = Article
+\bibitem[{Steverding(2014)}]{Steverding2014}
+\bibinfo{author}{Steverding\xfnm[ D.]}.
+\newblock \bibinfo{title}{{The history of Chagas disease}}.
+\newblock \emph{\bibinfo{journal}{Parasit Vectors}}
+  \bibinfo{year}{2014};\bibinfo{volume}{7}:\bibinfo{pages}{317}.
+\newblock \DOIprefix\doi{10.1186/1756-3305-7-317}.
+%Type = Article
+\bibitem[{Pereira~Nunes et~al.(2013)Pereira~Nunes, Dones, Morillo, Encina and
+  Ribeiro}]{Nunes2013}
+\bibinfo{author}{Pereira~Nunes\xfnm[ M.C.]}, \bibinfo{author}{Dones\xfnm[ W.]},
+  \bibinfo{author}{Morillo\xfnm[ C.A.]}, \bibinfo{author}{Encina\xfnm[ J.J.]},
+  \bibinfo{author}{Ribeiro\xfnm[ A.L.]}.
+\newblock \bibinfo{title}{{Chagas disease: An overview of clinical and
+  epidemiological aspects}}.
+\newblock \emph{\bibinfo{journal}{J Am Coll Cardiol}}
+  \bibinfo{year}{2013};\bibinfo{volume}{62}(\bibinfo{number}{9}):\bibinfo{pages}{767--776}.
+\newblock \DOIprefix\doi{10.1016/j.jacc.2013.05.046}.
+%Type = Article
+\bibitem[{Nouvellet et~al.(2015)Nouvellet, Cucunub{\'{a}} and
+  Gourbiere}]{Nouvellet2015}
+\bibinfo{author}{Nouvellet\xfnm[ P.]}, \bibinfo{author}{Cucunub{\'{a}}\xfnm[
+  Z.M.]}, \bibinfo{author}{Gourbiere\xfnm[ S.]}.
+\newblock \bibinfo{title}{{Ecology, Evolution and Control of Chagas Disease: A
+  Century of Neglected Modelling and a Promising Future}}.
+\newblock \emph{\bibinfo{journal}{Adv Parasitol}}
+  \bibinfo{year}{2015};\bibinfo{volume}{87}:\bibinfo{pages}{135--191}.
+\newblock \DOIprefix\doi{10.1016/bs.apar.2014.12.004}.
+%Type = Article
+\bibitem[{Díaz-Infante and Jerez(2016)}]{Diaz-Infante2016}
+\bibinfo{author}{Díaz-Infante\xfnm[ S.]}, \bibinfo{author}{Jerez\xfnm[ S.]}.
+\newblock \bibinfo{title}{Convergence and asymptotic stability of the explicit
+  steklov method for stochastic differential equations}.
+\newblock \emph{\bibinfo{journal}{Journal of Computational and Applied
+  Mathematics}} \bibinfo{year}{2016};\bibinfo{volume}{291}:\bibinfo{pages}{36
+  -- 47}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S037704271500028X}.
+  \DOIprefix\doi{https://doi.org/10.1016/j.cam.2015.01.016};
+  \bibinfo{note}{mathematical Modeling and Computational Methods}.
+%Type = Article
+\bibitem[{Cohen and G{\"{u}}rtler(2001)}]{Cohen2001}
+\bibinfo{author}{Cohen\xfnm[ J.E.]}, \bibinfo{author}{G{\"{u}}rtler\xfnm[
+  R.E.]}.
+\newblock \bibinfo{title}{{Modeling household transmission of American
+  trypanosomiasis.}}
+\newblock \emph{\bibinfo{journal}{Science}}
+  \bibinfo{year}{2001};\bibinfo{volume}{293}(\bibinfo{number}{5530}):\bibinfo{pages}{694--698}.
+\newblock \DOIprefix\doi{10.1126/science.1060638}.
+%Type = Article
+\bibitem[{Rabinovich(1972)}]{Rabinovich1972}
+\bibinfo{author}{Rabinovich\xfnm[ J.E.]}.
+\newblock \bibinfo{title}{{Vital Statistics of Triatominae ( Hemiptera :
+  Reduviidae ) Under Laboratory Conditions}}.
+\newblock \emph{\bibinfo{journal}{J Med Entomol}}
+  \bibinfo{year}{1972};\bibinfo{volume}{9}(\bibinfo{number}{4}):\bibinfo{pages}{351--370}.
+\newblock \DOIprefix\doi{10.1093/jmedent/9.4.351}.
+
+\end{thebibliography}

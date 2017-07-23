@@ -1,0 +1,92 @@
+\begin{definition}
+		We say that $x^{*}$ is an equilibrium position of the SDE·\eqref{eq.ap.1} 
+		if $f(t,x^{*})=0$ and $g(t,x^{*})=0$ for all
+	$t\geq t_{0}$.
+\end{definition}
+%
+\begin{definition}[{\citet[Section 5]{Khasminskii2012}}]\label{dfn:app3}
+	Let $x^{*}$ as above definition and
+	$
+		X^{t_{0},x_{0}}
+	$
+	the solution of \eqref{eq.ap.1} whit initial condition $X(t_0)=x_0$.
+	\begin{enumerate}[(i)]
+		\item The equilibrium solution $x^{*}$ of equation~\eqref{eq.ap.1} is said 
+		to be stable in probability for $t\geq 0$ if for any $t_{0}\geq 0$ and 
+		$\epsilon >0$
+		\begin{align*}
+			\lim\limits_{x_{0}\rightarrow x^{*}}\mathbb{P}
+			\left\lbrace 
+				\sup\limits_{t>t_{0}} 
+				\norm{X^{t_{0},x_{0}}-x^{*}}> \epsilon 
+			\right\rbrace = 0.
+		\end{align*}
+		\item 
+			The equilibrium solution $x^{*}$ is said to be asymptotically 
+			stable in probability if it is stable in probability and 
+			\begin{align*}
+			\lim\limits_{x_{0}
+				\rightarrow x^{*}}\mathbb{P}
+				\left\lbrace 
+					\lim\limits_{t\rightarrow \infty}X^{t_{0},x_{0}}(t)=x^{*}
+				\right\rbrace = 1.
+			\end{align*}
+		\item
+			The equilibrium solution $x^{*}$ is said to be (asymptotically) 
+			stable in the large if it is stable in probability and also for all 
+			$t_{0},x_{0}$
+			\begin{align*}
+				\mathbb{P}
+					\left\lbrace 
+						\lim
+						\limits_{t\rightarrow \infty}X^{t_{0},x_{0}}(t)=x^{*}
+					\right\rbrace =1.
+			\end{align*}
+	\end{enumerate}
+\end{definition}
+%
+\begin{definition}[{\citet[p. 108]{Mao2007}}]\label{dfn:radial_unbonded}
+	A function $V(x,t)$ defined on 
+	$\mathbb{R}^{d}\times\left[t_{0},\infty\right)$ is said to be radially 
+	unbounded if
+	\begin{align*}\label{def.radi}
+		\lim
+		\limits_{\norm{x}\rightarrow\infty}
+		\inf\limits_{t\geq t_{0}}V(x,t)=\infty.
+	\end{align*}
+\end{definition}
+%
+\begin{theorem}[{\citet[Theorem 2.4]{Mao2007}}]\label{theo.ap.3}
+	Suppose that the assumptions of \Cref{thm:existence} holds for
+	$t\geq t_{0}$, and let 
+	$S_{h} = 
+		\{ 
+			X\in \R^{d}:
+			\norm{X-x^{*}}<h
+		\}
+	$. 
+	If there exists a positive-definite decrescent radially unbounded 
+	function 
+	$
+		V(x,t)\in C^{2,1}
+		\left(
+			S_{h}\times \left[t_{0},\infty 
+		\right);
+		\mathbb{R}_{+}\right)
+	$, such that $\mathcal{L}V(x,t)$ is 
+	negative-definite, 
+	then the equilibrium solution $x^{*}$ of 
+	equation~\eqref{eq.ap.1} is stochastically asymptotically stable in the large.
+\end{theorem}
+%
+\begin{lemma}[%
+		Strong Law of Large Numbers for Martingales %
+		{\citep[Theorem 3.4]{Mao2007}}
+	]\label{lem.marting}
+	Let $Μ = \left\{M_t\right\}_{t \geq 0}$ be a real--valued continuous local 
+	martingale vanishing at $t = 0$. 
+	If $M$ has finite quadratic variation, then
+	$$
+		\lim_{t \to \infty} \frac{M_t}{t}=0.
+	$$
+\end{lemma}

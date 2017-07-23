@@ -1,0 +1,144 @@
+Consider the following SDE,
+\begin{equation}\label{eq.ap.1}
+	\begin{aligned}
+		dX(t) &= f(t,X)dt + g(t,X)dW(t), \\ 
+		X(t_0) &=x_0, \quad
+		t\in [t_0,T].
+	\end{aligned}
+\end{equation}
+with a non random initial condition 
+$X(t_{0})=x_{0}$,
+finite 
+$
+	T
+$, 
+and real coefficients
+$
+	f:
+	\left[ 
+		t_{0}, T
+	\right]
+	\times 
+	\mathbb{R}^{d} 
+	\to \mathbb{R}^{d}
+$
+,
+$
+	g:	
+	\left[ 
+		t_{0},T
+	\right]
+	\times
+	\mathbb{R}^{d} 
+	\to 
+	\mathbb{R}^{d\times m}
+$,
+driven by $m$ independent standard one-dimensional Wiener processes
+$W_j$, defined on a complete and filtered 
+probability space
+$
+	\left(
+		\Omega, \calF , (\calF_t)_{0\leq t\leq T},\P
+	\right)
+$.
+We say that \Cref{eq.ap.1} has unique solution up to equivalence if for any
+two solutions $X_{1}(t)$ and $X_{2}(t)$ 
+$
+			\mathbb{P}
+			\{
+				X_{1}(t)=X_{2}(t)\mbox{ for all } t \in [t_{0},T]
+			\}=1
+		$.
+
+	Let $\calL$ denotes the infinitesimal generator associated to the stochastic 
+	SDE~\eqref{eq.ap.1}, and defined by
+\begin{equation}\label{eq.ap.2}
+	\mathcal{L} =
+		\frac{\partial }{\partial t} 
+		+
+		\sum_{i=1}^d
+			f_{i}(t,X(t))
+			\frac{\partial}{\partial x_{i}}
+			+
+			\frac{1}{2}
+		\sum_{i,j=1}^m
+			\left(
+				g(t, X(t)) g^{T}(t, X(t))
+			\right)_{ij}
+			\frac{\partial^{2}}{\partial x_{i}\partial x_{j}}.
+\end{equation}
+Under the above, we use a part of the result for existence and unique of 
+solutions enunciated by \citeauthor*{Khasminskii2012} in \cite{Khasminskii2012}.
+\begin{theorem}[{\citet[Theorem 3.4]{Khasminskii2012}}]\label{thm:existence}
+	Let the vectors 
+	$$
+		f(t,x), \quad g_1(t,x), ..., g_m(t,x), \quad
+		t\in [t_{0},T],
+		\qquad x\in \R^{d},
+	$$
+	be continuous functions of $(t,x)$, such that for some constant $B$ the 
+	following conditions hold in the entire domain of definition:
+	\begin{equation}
+		\begin{aligned}\label{eq.ap.3}
+			\norm{
+				f(t,x)- f(t,y)
+			} 
+			&+ 
+			\sum
+				\limits_{r=1}^{m}
+				\norm{
+					g_{r}(t,x)- g_r(t,y)
+				}
+			\leq B 
+			\norm{x-y},\\
+			\norm{
+				f(t,x)} 
+				&+ 
+				\sum
+				\limits_{r=1}^{m}
+				\norm{
+					g_r(t,x)} 
+				\leq B (1 + \norm{x}) ~.
+		\end{aligned}
+	\end{equation}
+	Then, for every random variable $X(t_{0})$ independent of the process 
+	$W_{r}(t)-W_{r}(t_{0})$ there exists a solution $X(t)$ of~\eqref{eq.ap.1} 
+	which is almost surely continuous stochastic process and is unique up to 
+	equivalence.
+\end{theorem}
+Also, we applied the following result in order to assure regularity of 
+solutions to our SDE model.
+\begin{theorem}[{\citet[Corollary 3.1]{Khasminskii2012}}]\label{theo.ap.2}
+	Let $\mathsf{D}$ and $\mathsf{D}_{n}$, for each positive integer $n$, be open 
+	sets in $\mathbb{R}^{d}$, such that
+	\begin{eqnarray*}
+		\mathsf{D}_{n}
+		\subseteq 
+		\mathsf{D}_{n+1},
+		\ \ \overline{\mathsf{D}}_{n}
+		\subseteq \mathsf{D},
+		\ \ \mbox{and}
+		\ \ \mathsf{D}
+		=\displaystyle \bigcup_{n}{\mathsf{D}_{n}},
+	\end{eqnarray*}
+	Suppose that in every cylinder $[ t_{0},\infty)\times \mathsf{D}_{n}$, the 
+	functions $f(t,x)$ and $g_r(t,x)$ satisfy conditions~\eqref{eq.ap.3} 
+	and there exists a function $V(t,x)$, twice continuously differentiable in 
+	$x$ and continuously differentiable in $t$ in the domain 
+	$[ t_{0},\infty)\times \mathsf{D}$, such that for some positive constant $c$
+	it holds that $\mathcal{L}V\leq cV$ and,
+	\begin{eqnarray*}
+		\inf_{t\geq t_{0}, 
+		x \in \mathsf{D}
+		\backslash 
+		\mathsf{D}_{n}} 
+		V(t,x)\to \infty ,
+		\ \ \ \ \text{ as }
+		\ \ n \to \infty,
+	\end{eqnarray*}
+	then, the conclusion of \Cref{thm:existence} holds provided that also 
+$\mathbb{P}(x(t_{0})\in \mathsf{D})=1$. Moreover, the solution satisfies that 
+$$
+	\mathbb{P}(x(t)\in \mathsf{D})=1,\mbox{ for all }t\geq t_{0} ~.
+$$
+\end{theorem}

@@ -1,0 +1,791 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Article{Alvar2012,
+  Title                    = {Leishmaniasis Worldwide and Global Estimates of Its Incidence},
+  Author                   = {Alvar, Jorge AND Vélez, Iván D. AND Bern, Caryn AND Herrero, Mercé AND Desjeux, Philippe AND Cano, Jorge AND Jannin, Jean AND Boer, Margriet den AND the WHO Leishmaniasis Control Team},
+  Journal                  = {PLOS ONE},
+  Year                     = {2012},
+
+  Month                    = {05},
+  Number                   = {5},
+  Pages                    = {1-12},
+  Volume                   = {7},
+
+  Abstract                 = {As part of a World Health Organization-led effort to update the empirical evidence base for the leishmaniases, national experts provided leishmaniasis case data for the last 5 years and information regarding treatment and control in their respective countries and a comprehensive literature review was conducted covering publications on leishmaniasis in 98 countries and three territories (see ‘Leishmaniasis Country Profiles Text S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S33, S34, S35, S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63, S64, S65, S66, S67, S68, S69, S70, S71, S72, S73, S74, S75, S76, S77, S78, S79, S80, S81, S82, S83, S84, S85, S86, S87, S88, S89, S90, S91, S92, S93, S94, S95, S96, S97, S98, S99, S100, S101’). Additional information was collated during meetings conducted at WHO regional level between 2007 and 2011. Two questionnaires regarding epidemiology and drug access were completed by experts and national program managers. Visceral and cutaneous leishmaniasis incidence ranges were estimated by country and epidemiological region based on reported incidence, underreporting rates if available, and the judgment of national and international experts. Based on these estimates, approximately 0.2 to 0.4 cases and 0.7 to 1.2 million VL and CL cases, respectively, occur each year. More than 90% of global VL cases occur in six countries: India, Bangladesh, Sudan, South Sudan, Ethiopia and Brazil. Cutaneous leishmaniasis is more widely distributed, with about one-third of cases occurring in each of three epidemiological regions, the Americas, the Mediterranean basin, and western Asia from the Middle East to Central Asia. The ten countries with the highest estimated case counts, Afghanistan, Algeria, Colombia, Brazil, Iran, Syria, Ethiopia, North Sudan, Costa Rica and Peru, together account for 70 to 75% of global estimated CL incidence. Mortality data were extremely sparse and generally represent hospital-based deaths only. Using an overall case-fatality rate of 10%, we reach a tentative estimate of 20,000 to 40,000 leishmaniasis deaths per year. Although the information is very poor in a number of countries, this is the first in-depth exercise to better estimate the real impact of leishmaniasis. These data should help to define control strategies and reinforce leishmaniasis advocacy.},
+  Doi                      = {10.1371/journal.pone.0035671},
+  Publisher                = {Public Library of Science},
+  Url                      = {https://doi.org/10.1371/journal.pone.0035671}
+}
+
+@Book{Arnold1973,
+  Title                    = {Stochastic Differential Equations: Theory and Applications},
+  Author                   = {Arnold, Ludwig},
+  Publisher                = {Wiley},
+  Year                     = {1973},
+  Series                   = {A wiley-Interscience publication}
+}
+
+@Article{Bern2011,
+  Title                    = {{Trypanosoma cruzi and Chagas' Disease in the United States.}},
+  Author                   = {Bern, Caryn and Kjos, Sonia and Yabsley, Michael J and Montgomery, Susan P},
+  Journal                  = {Clin. Microbiol. Rev.},
+  Year                     = {2011},
+
+  Month                    = {oct},
+  Number                   = {4},
+  Pages                    = {655--81},
+  Volume                   = {24},
+
+  Doi                      = {10.1128/CMR.00005-11},
+  ISSN                     = {1098-6618},
+  Pmid                     = {21976603}
+}
+
+@Article{Castanera2003,
+  Title                    = {{A stage-structured stochastic model of the population dynamics of Triatoma infestans, the main vector of Chagas disease}},
+  Author                   = {Casta{\~{n}}era, M{\'{o}}nica B. and Aparicio, Juan P. and G{\"{u}}rtler, Ricardo E.},
+  Journal                  = {Ecol. Modell.},
+  Year                     = {2003},
+  Number                   = {1-2},
+  Pages                    = {33--53},
+  Volume                   = {162},
+
+  Doi                      = {10.1016/S0304-3800(02)00388-5},
+  ISBN                     = {0304-3800},
+  ISSN                     = {03043800},
+  Keywords                 = {Chagas disease,Population dynamics,Stochastic model,Triatoma infestans,Trypanosoma cruzi,Vector}
+}
+
+@Article{Coffield2013,
+  Title                    = {{A Model for Chagas Disease with Oral and Congenital Transmission}},
+  Author                   = {Coffield, Daniel J. and Spagnuolo, Anna Maria and Shillor, Meir and Mema, Ensela and Pell, Bruce and Pruzinsky, Amanda and Zetye, Alexandra},
+  Journal                  = {PLoS One},
+  Year                     = {2013},
+
+  Month                    = {jun},
+  Number                   = {6},
+  Pages                    = {e67267},
+  Volume                   = {8},
+
+  Doi                      = {10.1371/journal.pone.0067267},
+  Editor                   = {Tanowitz, Herbert B.},
+  ISBN                     = {1932-6203},
+  ISSN                     = {19326203},
+  Pmid                     = {23840647},
+  Publisher                = {Public Library of Science}
+}
+
+@Article{Cohen2001,
+  Title                    = {{Modeling household transmission of American trypanosomiasis.}},
+  Author                   = {Cohen, J E and G{\"{u}}rtler, R E},
+  Journal                  = {Science},
+  Year                     = {2001},
+
+  Month                    = {jul},
+  Number                   = {5530},
+  Pages                    = {694--698},
+  Volume                   = {293},
+
+  Doi                      = {10.1126/science.1060638},
+  ISBN                     = {0036-8075 (Print)},
+  ISSN                     = {0036-8075},
+  Pmid                     = {11474111}
+}
+
+@Article{Coura1988,
+  Title                    = {{Determinantes epidemiol{\'{o}}gicos da doen{\c{c}}a de Chagas no Brasil: a infec{\c{c}}{\~{a}}o, a doen{\c{c}}a e sua morbi-mortalidade}},
+  Author                   = {Coura, J. R.},
+  Journal                  = {Mem. Inst. Oswaldo Cruz},
+  Year                     = {1988},
+
+  Month                    = {nov},
+  Pages                    = {392--402},
+  Volume                   = {83},
+
+  Doi                      = {10.1590/S0074-02761988000500032},
+  ISSN                     = {0074-0276},
+  Publisher                = {Funda{\c{c}}{\~{a}}o Oswaldo Cruz}
+}
+
+@Article{Crawford2014,
+  Title                    = {{A metapopulation model for sylvatic T. cruzi transmission with vector migration.}},
+  Author                   = {Crawford, Britnee and Kribs-Zaleta, Christopher},
+  Journal                  = {Math. Biosci. Eng.},
+  Year                     = {2014},
+  Number                   = {3},
+  Pages                    = {471--509},
+  Volume                   = {11},
+
+  Doi                      = {10.3934/mbe.2014.11.471},
+  ISSN                     = {1551-0018},
+  Pmid                     = {24506549}
+}
+
+@Article{Cruz-Pacheco2012a,
+  Title                    = {Control measures for Chagas disease },
+  Author                   = {Gustavo Cruz-Pacheco and Lourdes Esteva and Cristobal Vargas},
+  Journal                  = {Mathematical Biosciences },
+  Year                     = {2012},
+  Number                   = {1–2},
+  Pages                    = {49 - 60},
+  Volume                   = {237},
+
+  Abstract                 = {Chagas disease, also known as American trypanosomiasis, is a potentially life-threatening illness caused by the protozoan parasite, Trypanosoma cruzi. The main mode of transmission of this disease in endemic areas is through an insect vector called triatomine bug. Triatomines become infected with T. cruzi by feeding blood of an infected person or animal. Chagas disease is considered the most important vector borne infection in Latin America. It is estimated that between 16 and 18 millions of persons are infected with T. cruzi, and at least 20,000 deaths each year. In this work we formulate a model for the transmission of this infection among humans, vectors and domestic mammals. Our main objective is to assess the effectiveness of Chagas disease control measures. For this, we do sensitivity analysis of the basic reproductive number R 0 and the endemic proportions with respect to epidemiological and demographic parameters. },
+  Doi                      = {https://doi.org/10.1016/j.mbs.2012.03.005},
+  ISSN                     = {0025-5564},
+  Keywords                 = {Chagas},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0025556412000363}
+}
+
+@Article{Diaz-Infante2016,
+  Title                    = {Convergence and asymptotic stability of the explicit Steklov method for stochastic differential equations },
+  Author                   = {Saúl Díaz-Infante and Silvia Jerez},
+  Journal                  = {Journal of Computational and Applied Mathematics },
+  Year                     = {2016},
+  Note                     = {Mathematical Modeling and Computational Methods },
+  Pages                    = {36 - 47},
+  Volume                   = {291},
+
+  Abstract                 = {Abstract In this paper, we develop a new numerical method with asymptotic stability properties for solving stochastic differential equations (SDEs). The foundations for the new solver are the Steklov mean and an exact discretization for the deterministic version of the SDEs. Strong consistency and convergence properties are demonstrated for the proposed method. Moreover, a rigorous linear and nonlinear asymptotic stability analysis is carried out for the multiplicative case in a mean-square sense and for the additive case in a path-wise sense using the pullback limit. In order to emphasize the characteristics of the Steklov discretization we use as benchmarks the stochastic logistic equation and the Langevin equation with a nonlinear potential of the Brownian dynamics. We show that the Steklov method has mild stability requirements and allows long-time simulations in several applications. },
+  Doi                      = {https://doi.org/10.1016/j.cam.2015.01.016},
+  ISSN                     = {0377-0427},
+  Keywords                 = {Stochastic differential equations},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S037704271500028X}
+}
+
+@Article{Diekmann1990,
+  Title                    = {{On the definition and the computation of the basic reproduction ratio $R_0$ in models for infectious diseases in heterogeneous populations}},
+  Author                   = {Diekmann, O. and Heesterbeek, J.A.P. and Metz, J.A.J.},
+  Journal                  = {J. Math. Biol.},
+  Year                     = {1990},
+
+  Month                    = {jun},
+  Number                   = {4},
+  Pages                    = {365--382},
+  Volume                   = {28},
+
+  Doi                      = {10.1007/BF00178324},
+  Publisher                = {Springer-Verlag}
+}
+
+@Article{Fabrizio2014,
+  Title                    = {{Modelling inter-human transmission dynamics of Chagas disease: analysis and application.}},
+  Author                   = {Fabrizio, M C and Schweigmann, N J and Bartoloni, N J},
+  Journal                  = {Parasitology},
+  Year                     = {2014},
+
+  Month                    = {may},
+  Number                   = {6},
+  Pages                    = {837--848},
+  Volume                   = {141},
+
+  Doi                      = {10.1017/S0031182013002199},
+  ISSN                     = {1469-8161},
+  Keywords                 = {Argentina,Argentina: epidemiology,Basic Reproduction Number,Chagas Disease,Chagas Disease: parasitology,Chagas Disease: transmission,Humans,Models,Theoretical,Trypanosoma cruzi,Trypanosoma cruzi: physiology},
+  Pmid                     = {24533945},
+  Publisher                = {Cambridge University Press}
+}
+
+@Article{Gurtler1998,
+  Title                    = {{Influence of humans and domestic animals on the household prevalence of Trypanosoma cruzi in Triatoma infestans populations in northwest Argentina.}},
+  Author                   = {G{\"{u}}rtler, R E and Cohen, J E and Cecere, M C and Lauricella, M A and Chuit, R and Segura, E L},
+  Journal                  = {Am. J. Trop. Med. Hyg.},
+  Year                     = {1998},
+
+  Month                    = {jun},
+  Number                   = {6},
+  Pages                    = {748--758},
+  Volume                   = {58},
+
+  ISSN                     = {0002-9637},
+  Pmid                     = {9660458}
+}
+
+@Book{Gard1988,
+  Title                    = {Introduction to stochastic differential equations},
+  Author                   = {Gard, T.C},
+  Publisher                = {New York: Marcel Dekker},
+  Year                     = {1988},
+
+  ISBN                     = {082477776X}
+}
+
+@Article{Gourbiere2012,
+  Title                    = {{Genetics and evolution of triatomines: from phylogeny to vector control.}},
+  Author                   = {Gourbi{\`{e}}re, S and Dorn, P and Tripet, F and Dumonteil, E},
+  Journal                  = {Heredity (Edinb).},
+  Year                     = {2012},
+
+  Month                    = {mar},
+  Number                   = {3},
+  Pages                    = {190--202},
+  Volume                   = {108},
+
+  Doi                      = {10.1038/hdy.2011.71},
+  File                     = {:C$\backslash$:/Users/adria/Dropbox/Adriano/chagas/Gourbiere{\_}2012.pdf:pdf},
+  ISSN                     = {1365-2540},
+  Pmid                     = {21897436}
+}
+
+@Article{Hethcote1985a,
+  Title                    = {{Stability of the endemic equilibrium in epidemic models with subpopulations}},
+  Author                   = {Hethcote, Herbert W. and Thieme, Horst R.},
+  Journal                  = {Math. Biosci.},
+  Year                     = {1985},
+
+  Month                    = {aug},
+  Number                   = {2},
+  Pages                    = {205--227},
+  Volume                   = {75},
+
+  Doi                      = {10.1016/0025-5564(85)90038-0},
+  ISSN                     = {00255564},
+  Publisher                = {Elsevier}
+}
+
+@Article{Inaba2004,
+  Title                    = {{A mathematical model for Chagas disease with infection-age-dependent infectivity}},
+  Author                   = {Inaba, Hisashi and Sekine, Hisashi},
+  Journal                  = {Math. Biosci.},
+  Year                     = {2004},
+  Number                   = {1},
+  Pages                    = {39--69},
+  Volume                   = {190},
+
+  Doi                      = {10.1016/j.mbs.2004.02.004},
+  ISSN                     = {00255564},
+  Keywords                 = {Backward bifurcation,Chagas disease,Epidemic model,Infection-age-dependent infectivity},
+  Pmid                     = {15172802}
+}
+
+@Article{Isasi2001,
+  Title                    = {{A simple model for the interaction between T. cruzi and its antibodies during Chagas infection.}},
+  Author                   = {Isasi, S C and Sibona, G J and Condat, C a},
+  Journal                  = {J. Theor. Biol.},
+  Year                     = {2001},
+  Number                   = {1},
+  Pages                    = {1--13},
+  Volume                   = {208},
+
+  Doi                      = {10.1006/jtbi.2000.2191},
+  ISSN                     = {0022-5193},
+  Keywords                 = {Acute Disease,Animals,Antibodies, Protozoan,Antibodies, Protozoan: immunology,Antibody Formation,Chagas Disease,Chagas Disease: immunology,Host-Parasite Interactions,Humans,Mice,Mice, Inbred BALB C,Models, Immunological,Trypanosoma cruzi,Trypanosoma cruzi: immunology},
+  Pmid                     = {11162048}
+}
+
+@Article{Ji2014,
+  Title                    = {{Threshold behaviour of a stochastic SIR model}},
+  Author                   = {Ji, Chunyan and Jiang, Daqing},
+  Journal                  = {Appl. Math. Model.},
+  Year                     = {2014},
+  Number                   = {21},
+  Pages                    = {5067--5079},
+  Volume                   = {38},
+
+  Doi                      = {10.1016/j.apm.2014.03.037},
+  ISSN                     = {0307904X}
+}
+
+@Article{Jifa1992,
+  Title                    = {{On the existence and uniqueness of connecting orbits for cooperative systems}},
+  Author                   = {Jifa, Jiang},
+  Journal                  = {Acta Math. Sin.},
+  Year                     = {1992},
+
+  Month                    = {jun},
+  Number                   = {2},
+  Pages                    = {184--188},
+  Volume                   = {8},
+
+  Doi                      = {10.1007/BF02629938},
+  ISSN                     = {1439-8516},
+  Publisher                = {Springer-Verlag}
+}
+
+@Book{Khasminskii2012,
+  Title                    = {{Stochastic Stability of Differential Equations}},
+  Author                   = {Khasminskii, Rafail},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {2012},
+
+  Address                  = {Berlin, Heidelberg},
+  Series                   = {Stochastic Modelling and Applied Probability},
+  Volume                   = {66},
+
+  Doi                      = {10.1007/978-3-642-23280-0},
+  ISBN                     = {978-3-642-23279-4},
+  Url                      = {http://link.springer.com/10.1007/978-3-642-23280-0}
+}
+
+@Article{Kribs-Zaleta2014,
+  Title                    = {{Graphical analysis of evolutionary trade-off in sylvatic Trypanosoma cruzi transmission modes}},
+  Author                   = {Kribs-Zaleta, Christopher M.},
+  Journal                  = {Journal of Theoretical Biology},
+  Year                     = {2014},
+  Pages                    = {34--43},
+  Volume                   = {353},
+
+  Doi                      = {10.1016/j.jtbi.2014.03.002},
+  ISSN                     = {00225193}
+}
+
+@Article{Kribs-Zaleta2010a,
+  Title                    = {{Alternative transmission modes for Trypanosoma cruzi.}},
+  Author                   = {Kribs-Zaleta, Christopher M.},
+  Journal                  = {Math. Biosci. Eng.},
+  Year                     = {2010},
+
+  Month                    = {jul},
+  Number                   = {3},
+  Pages                    = {657--673},
+  Volume                   = {7},
+
+  Doi                      = {10.3934/mbe.2010.7.657},
+  ISSN                     = {1551-0018},
+  Keywords                 = {Animals,Basic Reproduction Number,Chagas Disease,Chagas Disease: epidemiology,Chagas Disease: parasitology,Chagas Disease: transmission,Humans,Insect Vectors,Insect Vectors: parasitology,Raccoons,Raccoons: parasitology,Southeastern United States,Southeastern United States: epidemiology,Triatoma,Triatoma: parasitology,Trypanosoma cruzi,Trypanosoma cruzi: physiology},
+  Pmid                     = {20578791}
+}
+
+@Article{Lardeux2013,
+  Title                    = {{Niche invasion, competition and coexistence amongst wild and domestic Bolivian populations of Chagas vector Triatoma infestans (Hemiptera, Reduviidae, Triatominae)}},
+  Author                   = {Lardeux, F},
+  Journal                  = {Comptes Rendus - Biol.},
+  Year                     = {2013},
+  Number                   = {4},
+  Pages                    = {183--193},
+  Volume                   = {336},
+
+  Doi                      = {10.1016/j.crvi.2013.05.003},
+  ISSN                     = {16310691},
+  Keywords                 = {Chagas,Coexistence,Competition,Domiciliation,Invasion,Triatominae},
+  Pmid                     = {23849721}
+}
+
+@Article{Lardeux2014,
+  Title                    = {{Experimental control of Triatoma infestans in poor rural villages of Bolivia through community participation}},
+  Author                   = {Lardeux, F and Depick{\`{e}}re, S and Aliaga, C and Chavez, T and Zambrana, L},
+  Journal                  = {Trans. R. Soc. Trop. Med. Hyg.},
+  Year                     = {2014},
+  Number                   = {2},
+  Pages                    = {150--158},
+  Volume                   = {109},
+
+  Doi                      = {10.1093/trstmh/tru205},
+  ISSN                     = {18783503},
+  Keywords                 = {Bolivia,Chagas disease,Community participation,Risk factor,Triatoma infestans,Vector control},
+  Pmid                     = {25604766}
+}
+
+@Article{Lee2013,
+  Title                    = {{Global economic burden of Chagas disease: A computational simulation model}},
+  Author                   = {Lee, Bruce Y and Bacon, Kristina M and Bottazzi, Maria Elena and Hotez, Peter J},
+  Journal                  = {Lancet Infect. Dis.},
+  Year                     = {2013},
+  Number                   = {4},
+  Pages                    = {342--348},
+  Volume                   = {13},
+
+  Doi                      = {10.1016/S1473-3099(13)70002-1},
+  ISBN                     = {1474-4457},
+  ISSN                     = {14733099},
+  Pmid                     = {23395248}
+}
+
+@Article{Lee2015,
+  Title                    = {{The role of residence times in two-patch dengue transmission dynamics and optimal strategies}},
+  Author                   = {Lee, S. and Castillo-Chavez, C.},
+  Journal                  = {J. Theor. Biol.},
+  Year                     = {2015},
+
+  Month                    = {jun},
+  Pages                    = {152--164},
+  Volume                   = {374},
+
+  Doi                      = {10.1016/j.jtbi.2015.03.005}
+}
+
+@Article{Liu2010,
+  Title                    = {{Persistence and extinction of a stochastic single-specie model under regime switching in a polluted environment}},
+  Author                   = {Liu, Meng and Wang, Ke},
+  Journal                  = {J. Theor. Biol.},
+  Year                     = {2010},
+  Number                   = {3},
+  Pages                    = {934--944},
+  Volume                   = {264},
+
+  Doi                      = {10.1016/j.jtbi.2010.03.008},
+  ISSN                     = {00225193}
+}
+
+@Book{Mao2007,
+  Title                    = {{Stochastic differential equations and applications}},
+  Author                   = {Mao, Xuerong.},
+  Year                     = {2007},
+
+  ISBN                     = {9781904275343},
+  Pages                    = {422}
+}
+
+@Article{Mena-Lorca2006,
+  Title                    = {{Coexistence in metacommunities: A tree-species model}},
+  Author                   = {Mena-Lorca, Jaime and Velasco-Hern{\'{a}}ndez, Jorge X. and Marquet, Pablo A.},
+  Journal                  = {Math. Biosci.},
+  Year                     = {2006},
+
+  Month                    = {jul},
+  Number                   = {1},
+  Pages                    = {42--56},
+  Volume                   = {202},
+
+  Doi                      = {10.1016/j.mbs.2006.04.005},
+  ISSN                     = {00255564},
+  Pmid                     = {16797037}
+}
+
+@Article{Mena-Lorca1999,
+  Title                    = {{Density-dependent dynamics and superinfection in an epidemic model.}},
+  Author                   = {Mena-Lorca, J and Velasco-Hernandez, J X and Castillo-Chavez, C},
+  Journal                  = {IMA J. Math. Appl. Med. Biol.},
+  Year                     = {1999},
+
+  Month                    = {dec},
+  Number                   = {4},
+  Pages                    = {307--17},
+  Volume                   = {16},
+
+  ISSN                     = {0265-0746},
+  Pmid                     = {10669892}
+}
+
+@TechReport{Moriana2016,
+  Title                    = {{ROMPIENDO EL SILENCIO. Una oportunidad para los pacientes de Chagas}},
+  Author                   = {Moriana, Silvia and Ortiz, Gema and Fanjul, Gonzalo},
+  Institution              = {Coalici{\'{o}}n Global de la Enfermedad de Chagas},
+  Year                     = {2016},
+
+  File                     = {:C$\backslash$:/Users/adria/Dropbox/Adriano/chagas/Informe Rompiendo el silencio.pdf:pdf},
+  ISBN                     = {842062702X},
+  Keywords                 = {01 narrativa,04 traducci{\'{o}},06 li,1975-actualitat},
+  Pages                    = {60}
+}
+
+@Article{Nouvellet2015,
+  Title                    = {{Ecology, Evolution and Control of Chagas Disease: A Century of Neglected Modelling and a Promising Future}},
+  Author                   = {Nouvellet, Pierre and Cucunub{\'{a}}, Zulma M. and Gourbiere, S},
+  Journal                  = {Adv. Parasitol.},
+  Year                     = {2015},
+  Pages                    = {135--191},
+  Volume                   = {87},
+
+  Doi                      = {10.1016/bs.apar.2014.12.004},
+  ISBN                     = {9780128032565},
+  ISSN                     = {0065308X},
+  Keywords                 = {Control,Dynamical model,Latin America,Mathematics,Neglected tropical disease,Public health,Statistics,Triatomine,Trypanosoma cruzi,Vector-borne},
+  Pmid                     = {25765195}
+}
+
+@Article{Olmos2015,
+  Title                    = {{On the Calculation of $R_0$ Using Submodels}},
+  Author                   = {Olmos, Daniel and Barradas, Ignacio and Baca-Carrasco, David},
+  Journal                  = {Differ. Equations Dyn. Syst.},
+  Year                     = {2015},
+  Pages                    = {1--17},
+
+  Doi                      = {10.1007/s12591-015-0257-7},
+  ISSN                     = {0971-3514}
+}
+
+@Article{Perez-Lopez2010,
+  Title                    = {{Chagas disease in pregnancy: a non-endemic problem in a globalized world}},
+  Author                   = {P\'erez-L\'opez, Faustino R and Chedraui, Peter},
+  Journal                  = {Arch Gynecol Obs.},
+  Year                     = {2010},
+  Pages                    = {595--599},
+  Volume                   = {282},
+
+  Doi                      = {10.1007/s00404-010-1553-7}
+}
+
+@Article{Pelosse2012a,
+  Title                    = {{The role of the ratio of vector and host densities in the evolution of transmission modes in vector-borne diseases. The example of sylvatic Trypanosoma cruzi}},
+  Author                   = {Pelosse, Perrine and Kribs-Zaleta, Christopher M.},
+  Journal                  = {J. Theor. Biol.},
+  Year                     = {2012},
+  Pages                    = {133--142},
+  Volume                   = {312},
+
+  Doi                      = {10.1016/j.jtbi.2012.07.028},
+  ISSN                     = {00225193},
+  Keywords                 = {Contact saturation process,Horizontal transmission,Trade-off,Vector-borne diseases,Vertical transmission},
+  Pmid                     = {22892441}
+}
+
+@Article{Nunes2013,
+  Title                    = {{Chagas disease: An overview of clinical and epidemiological aspects}},
+  Author                   = {Pereira Nunes, Maria Carmo and Dones, Wistremundo and Morillo, Carlos A. and Encina, Juan Justiniano and Ribeiro, Ant{\^{o}}nio Luiz},
+  Journal                  = {J. Am. Coll. Cardiol.},
+  Year                     = {2013},
+  Number                   = {9},
+  Pages                    = {767--776},
+  Volume                   = {62},
+
+  Doi                      = {10.1016/j.jacc.2013.05.046}
+}
+
+@Article{Rabinovich1972,
+  Title                    = {{Vital Statistics of Triatominae ( Hemiptera : Reduviidae ) Under Laboratory Conditions}},
+  Author                   = {Rabinovich, Jorge E},
+  Journal                  = {J. Med. Entomol.},
+  Year                     = {1972},
+  Number                   = {4},
+  Pages                    = {351--370},
+  Volume                   = {9},
+
+  Doi                      = {10.1093/jmedent/9.4.351},
+  ISSN                     = {0022-2585},
+  Pmid                     = {19850527557}
+}
+
+@Article{Rabinovich1990,
+  Title                    = {{A population-dynamics simulation model of the main vectors of Chagas' Disease transmission, Thodnius prolixus and Triatoma infestans}},
+  Author                   = {Rabinovich, Jorge E. and Himschoot, Patricia},
+  Journal                  = {Ecol. Modell.},
+  Year                     = {1990},
+  Number                   = {C},
+  Pages                    = {249--266},
+  Volume                   = {52},
+
+  Doi                      = {10.1016/0304-3800(90)90019-D},
+  ISSN                     = {03043800}
+}
+
+@Article{Rabinovich1976,
+  Title                    = {{Mathematical models and ecology of Chagas' disease}},
+  Author                   = {Rabinovich, Jorge E. and Rossell, O.},
+  Journal                  = {PAHO Am. Trypanos. Res.},
+  Year                     = {1976},
+  Pages                    = {359--369},
+  Volume                   = {318}
+}
+
+@Article{Coura2011,
+  Title                    = {{Chronic phase of Chagas disease: why should it be treated? A comprehensive review}},
+  Author                   = {Rodrigues-Coura, J and Borges-Pereira, J},
+  Journal                  = {Mem. Inst. Oswaldo Cruz},
+  Year                     = {2011},
+
+  Month                    = {sep},
+  Number                   = {6},
+  Pages                    = {641--645},
+  Volume                   = {106},
+
+  Doi                      = {10.1590/S0074-02762011000600001},
+  ISSN                     = {0074-0276},
+  Publisher                = {Funda{\c{c}}{\~{a}}o Oswaldo Cruz}
+}
+
+@Article{Sarkar2010,
+  Title                    = {{Chagas Disease Risk in Texas}},
+  Author                   = {Sarkar, Sahotra and Strutz, Stavana E and Frank, David M and Rivaldi, Chissa-��Louise and Sissel, Blake and S�nchez-Cordero, Victor},
+  Journal                  = {PLoS Negl. Trop. Dis.},
+  Year                     = {2010},
+  Number                   = {10},
+  Pages                    = {e836},
+  Volume                   = {4},
+
+  Doi                      = {10.1371/journal.pntd.0000836}
+}
+
+@Article{Schofield1986,
+  Title                    = {{Density-dependent perception of triatomine bug bites}},
+  Author                   = {Schofield, C J and Williams, N G and Marshall, T F},
+  Journal                  = {Ann Trop Med Parasitol},
+  Year                     = {1986},
+
+  Month                    = {jun},
+  Number                   = {3},
+  Pages                    = {351--358},
+  Volume                   = {80},
+
+  ISBN                     = {0003-4983 (Print)$\backslash$r0003-4983 (Linking)},
+  ISSN                     = {00034983},
+  Keywords                 = {*Insect Bites and Stings,*Rhodnius,*Sensation,*Triatominae,Adult,Arm,Double-Blind Method,Humans,Leg,Male,Middle Aged},
+  Pmid                     = {3541809}
+}
+
+@Article{schurz2007,
+  Title                    = {Modeling, analysis and discretization of stochastic logistic equations},
+  Author                   = {Schurz, Henri},
+  Journal                  = {International Journal of Numerical Analysis and Modeling},
+  Year                     = {2007},
+  Number                   = {2},
+  Pages                    = {178--197},
+  Volume                   = {4}
+}
+
+@Article{Schurz2015,
+  Title                    = {{Stochastic Asymptotic Stability of SIR Model with Variable Diffusion Rates}},
+  Author                   = {Schurz, Henri and Tosun, Kursad},
+  Journal                  = {J. Dyn. Differ. Equations},
+  Year                     = {2015},
+  Number                   = {1},
+  Pages                    = {69--82},
+  Volume                   = {27},
+
+  Doi                      = {10.1007/s10884-014-9415-9},
+  ISSN                     = {1040-7294},
+  Publisher                = {Springer US}
+}
+
+@Article{singh2013animal,
+  Title                    = {Animal reservoirs of visceral leishmaniasis in India},
+  Author                   = {Singh, Niti and Mishra, Jyotsna and Singh, Ram and Singh, Sarman},
+  Journal                  = {The Journal of parasitology},
+  Year                     = {2013},
+  Number                   = {1},
+  Pages                    = {64--67},
+  Volume                   = {99},
+
+  Publisher                = {American Society of Parasitologists}
+}
+
+@Article{Spagnuolo2012,
+  Title                    = {{A logistic delay differential equation model for Chagas disease with interrupted spraying schedules}},
+  Author                   = {Spagnuolo, Anna Maria and Shillor, Meir and Kingsland, Lindsey and Thatcher, Andrea and Toeniskoetter, Matthew and Wood, Benjamin},
+  Journal                  = {J. Biol. Dyn.},
+  Year                     = {2012},
+  Number                   = {2},
+  Pages                    = {377--394},
+  Volume                   = {6},
+
+  Doi                      = {10.1080/17513758.2011.587896},
+  ISSN                     = {1751-3758},
+  Keywords                 = {34A12,34A34,92B05,Chagas disease,delay logistic model,epidemic dynamics,numerical simulations,spraying with insecticides,steady states},
+  Pmid                     = {22873596}
+}
+
+@Article{Spagnuolo2011,
+  Title                    = {{A model for Chagas disease with controlled spraying}},
+  Author                   = {Spagnuolo, Anna Maria and Shillor, Meir and Stryker, Gabrielle A.},
+  Journal                  = {J. Biol. Dyn.},
+  Year                     = {2011},
+  Number                   = {4},
+  Pages                    = {299--317},
+  Volume                   = {5},
+
+  Doi                      = {10.1080/17513758.2010.505985},
+  ISSN                     = {1751-3758},
+  Keywords                 = {34A12,34A34,92B05,Chagas disease,Trypanosoma cruzi,dynamical systems,epidemic dynamics,insecticide spraying,nonlinear ODE system,numerical simulations,vector control},
+  Publisher                = {Taylor {\&} Francis}
+}
+
+@Article{Steverding2014,
+  Title                    = {{The history of Chagas disease}},
+  Author                   = {Steverding, Dietmar},
+  Journal                  = {Parasit. Vectors},
+  Year                     = {2014},
+  Pages                    = {317},
+  Volume                   = {7},
+
+  Doi                      = {10.1186/1756-3305-7-317}
+}
+
+@Article{Teixeira1979,
+  Title                    = {{Chagas' disease: trends in immunological research and prospects for immunoprophylaxis}},
+  Author                   = {Teixeira, Antonio R L},
+  Journal                  = {Bull. World Health Organ.},
+  Year                     = {1979},
+  Number                   = {5},
+  Pages                    = {697--710},
+  Volume                   = {57}
+}
+
+@Book{Thieme2003,
+  Title                    = {{Mathematics in population biology}},
+  Author                   = {Thieme, Horst R.},
+  Publisher                = {Princeton University Press},
+  Year                     = {2003},
+
+  ISBN                     = {0691092915},
+  Pages                    = {543}
+}
+
+@Book{Tibayrenc2010,
+  Title                    = {{American trypanosomiasis: Chagas disease one hundred years of research}},
+  Author                   = {Tibayrenc, Michel and Telleria, Jenny},
+  Publisher                = {Elsevier},
+  Year                     = {2010},
+
+  ISBN                     = {9780123848765},
+  Pages                    = {153--155}
+}
+
+@Article{VanDenDriessche2002,
+  Title                    = {{Reproduction numbers and sub-threshold endemic equilibria for compartmental models of disease transmission}},
+  Author                   = {{Van Den Driessche}, P. and Watmough, James},
+  Journal                  = {Math. Biosci.},
+  Year                     = {2002},
+  Pages                    = {29--48},
+  Volume                   = {180},
+
+  Doi                      = {10.1016/S0025-5564(02)00108-6},
+  ISBN                     = {0025-5564},
+  ISSN                     = {00255564},
+  Keywords                 = {Basic reproduction number,Disease control,Disease transmission model,Sub-threshold equilibrium},
+  Pmid                     = {12387915}
+}
+
+@Article{Velasco-Hernandez1994,
+  Title                    = {{A model for Chagas disease involving transmission by vectors and blood transfusion}},
+  Author                   = {Velasco-Hern{\'{a}}ndez, J X},
+  Journal                  = {Theor. Popul. Biol.},
+  Year                     = {1994},
+  Number                   = {July},
+  Pages                    = {1--31},
+  Volume                   = {46},
+
+  Doi                      = {10.1006/tpbi.1994.1017},
+  ISSN                     = {00405809},
+  Pmid                     = {8079195}
+}
+
+@Article{Velasco-Hernandez1991,
+  Title                    = {{An epidemiological model for the dynamics of Chagas' disease}},
+  Author                   = {Velasco-Hern{\'{a}}ndez, Jorge X.},
+  Journal                  = {BioSystems},
+  Year                     = {1991},
+  Number                   = {2},
+  Pages                    = {127--134},
+  Volume                   = {26},
+
+  Doi                      = {10.1016/0303-2647(91)90043-K},
+  ISSN                     = {03032647},
+  Keywords                 = {Chagas' disease,Endemic states,Mathematical model},
+  Pmid                     = {1841638}
+}
+
+@Article{Waleckx2012,
+  Title                    = {{New Discoveries of Sylvatic Triatoma infestans (Hemiptera: Reduviidae) Throughout the Bolivian Chaco}},
+  Author                   = {Waleckx, E and Depick{\`{e}}re, S and Salas, R and Aliaga, C and Monje, M and Calle, H and Buitrago, R and Noireau, F and Fr{\'{e}}d{\'{e}}rique Breni{\`{e}}re, S},
+  Journal                  = {Am. J. Trop. Med. Hyg},
+  Year                     = {2012},
+  Number                   = {3},
+  Pages                    = {455--458},
+  Volume                   = {86},
+
+  Doi                      = {10.4269/ajtmh.2012.11-0205}
+}
+
+@Article{WHO2015,
+  Title                    = {{Investing to overcome the global impact of neglected tropical diseases - Third WHO report on neglected tropical diseases}},
+  Author                   = {WHO},
+  Year                     = {2015},
+
+  Month                    = {February},
+  Pages                    = {75--81},
+
+  ISBN                     = {978-92-4-156486-1}
+}
+

@@ -1,0 +1,196 @@
+	According to SDE \eqref{eq.2}, let 
+%
+\begin{equation*} \label{eqn:SDE_coefficients}
+	\begin{aligned}
+			y(t)&:=(I_h(t),I_a(t),S_v(t),I_v(t))^T,
+			&&
+			F_{1} = 
+				F_{1}
+					\left(
+						I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t)
+					\right),
+			\\
+			F_{2} &=
+				F_{2}
+					\left(
+						I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t)
+					\right)
+			\\
+			f(y) &:= 
+			\begin{bmatrix} 
+				\alpha_{h}I_{v}\left(H-I_{h}\right)-\mu_{h}I_{h} \\
+				\alpha_{a}I_{v}\left(A-I_{a}\right)-\mu_{a}I_{a} \\
+				\Lambda_{v}T_{v}
+				-\left(
+					\alpha_{v_{h}}I_{h}
+					+\alpha_{v_{a}} I_{a}
+				\right)S_{v}
+				-\left(
+					\mu_{v}+r_{K}T_{v}
+				\right)S_{v}\\
+				\left(
+					\alpha_{v_{h}}I_{h}+\alpha_{v_{a}}I_{a}
+				\right)
+				S_{v}
+				-\left(
+					\mu_{v}+r_{K}T_{v}
+				\right)I_{v}
+			\end{bmatrix}, 
+			&&
+			g(y):=
+			\begin{bmatrix}
+				F_{1}\theta_{h}I_{v}\left(H-I_{h}\right) & 0 \\
+				0 & F_{2}\theta_{a}I_{v}\left(A-I_{a}\right) \\
+				- F_{1}\theta_{v_{h}}I_{h}S_{v} & -F_{2}\theta_{v_{a}}I_{a}S_{v} \\
+				F_{1}\theta_{v_{h}}I_{h}S_{v} & F_{2}\theta_{v_{a}}I_{a}S_{v} \\
+			\end{bmatrix}.
+	\end{aligned}
+\end{equation*}
+	Following the notation of \cite{Diaz-Infante2016} and 
+after some manipulations, we rewrite each drift
+component  function $f^{(j)}:\R^4:\to \R$, 
+$j \in \{1,\dots, 4\}$ of SDE \eqref{eq.8} as
+\begin{equation*}\label{eqn:AlternativeConstruction}
+	f^{(j)}(y) = a_j (y) y^{(j)} + b_{j}(y^{(-j)}), \qquad
+	y^{(-j)} = 
+		(y^{(1)}, 
+			\dots , y^{(j-1)}, y^{(j+1)}, 
+			\dots, y^{(d)}
+		)^T,
+\end{equation*}
+where
+\begin{align*}
+	a_1(y)&:=
+		-\left(
+			\alpha_{h} y^{(4)} +\mu_{h}
+		\right),
+	&
+	b_1(y)&:= 
+		\alpha_h  y^{(4)} H ,
+	\\
+	%
+	a_2(y) &:=
+		-
+		\left(
+			\alpha_{a} y^{(4)}+\mu_{a}
+		\right),
+	&
+	b_2(y)&:= 
+		\alpha_a  y^{(4)} A ,
+	\\
+	a_3(y) &:=
+		-
+		\left( 
+			 \alpha_{v_{h}} y^{(1)}
+			+ \alpha_{v_{a}} y^{(2)}
+			+ r_K (y^{(3)} + y^{(4)})
+			+\mu_v
+			- \Lambda_v
+		\right),
+	&
+	b_3(y)&:= 
+		\Lambda_{v} y^{(4)},
+		\\
+	a_4(y) &:=
+		-
+		\left(
+			\mu_{v}
+			+r_k
+			\left(
+				y^{(3)} + y^{(4)}
+			\right)
+		\right),
+		&
+	b_4(y) &:=
+		\left(
+			\alpha_{v_h} y^{(1)}
+			+
+			\alpha_{v_{a}} y^{(2)}
+		\right)
+		y^{(3)} ~.
+\end{align*}
+Let $h$ the step size. Consider the matrices 
+$
+	A^{(1)}= A^{(1)}(h,y)
+$,
+$
+A^{(2)}= A^{(2)}(h,y)
+$
+defined by
+\begin{align*}
+	A^{(1)}&:=
+		\begin{pmatrix}
+			e^{ha_1(y)} & 
+			\multicolumn{2}{c}{
+				\text{\kern0.5em\smash{\raisebox{-1ex}{\huge 0}}}
+			} \\
+			&\ddots\\
+			\multicolumn{2}{c}{
+				\text{\kern-0.5em\smash{\raisebox{0.95ex}{\huge 0}}}} 
+			& e^{ha_4(y)}
+		\end{pmatrix}, \notag
+		\\
+%
+	A^{(2)}&:=
+		\begin{pmatrix}
+			\left(
+				\displaystyle
+				\frac{e^{ha_1(y)} - 1}{a_1(y)}
+			\right)\1{E_1^c}
+			& 
+			\multicolumn{2}{c}{\text{\kern0.5em\smash{\raisebox{-1ex}{\huge 0}}}}\\
+			& \ddots&\\
+				\multicolumn{2}{c}{\text{\kern0.5em\smash{\raisebox{-1ex}{\huge 0}}}}&
+			\left(
+				\displaystyle
+				\frac{e^{h a_4(y)} - 1}{a_4(y)}
+			\right)\1{E_4^c}
+		\end{pmatrix}
+		+h
+		\begin{pmatrix}
+			\1{E_1} 
+			&
+			\multicolumn{2}{c}{\text{\kern0.5em\smash{\raisebox{-1ex}{\huge 0}}}}\\
+			&
+			\ddots 
+			&\\
+			\multicolumn{2}{c}{\text{\kern0.5em\smash{\raisebox{-1ex}{\huge 0}}}} 
+			&\1{E_4}
+		\end{pmatrix},\\
+		E_j&:=\{y \in \R^4: a_j(y)=0\} , \qquad 
+		b(y):= 
+			\left(
+				b_1(y^{(-1)}), \dots , b_4(y^{(-4)})
+			\right)^T.
+		\notag
+\end{align*}
+Thus, given $Y_0=y(0)$, and $h = T/N$, the LS method for 
+SDE \eqref{eq.8} reads
+\begin{equation}
+	\begin{aligned}\label{eqn:LS-scheme}
+		Y_{k+1} &= 
+			A^{(1)}(h,Y_k)Y_k
+			+ A^{(2)}(h,Y_k) b(Y_k) + g(Y_k) \Delta W_k
+						,\qquad k=0,\dots, N-1.
+	\end{aligned}
+\end{equation}
+Since \Cref{thm:regularity} ensures positivity of the SDE \eqref{eq.2} solution,
+in order to preserves this property, we modify the  
+scheme \eqref{eqn:LS-scheme} as
+\begin{equation}
+	\begin{aligned}
+		Y_k^{\star} &= 
+				A^{(1)}(h,Y_k)Y_k
+				+ A^{(2)}(h,Y_k)b(Y_k) + g(Y_k) \Delta W_k \\
+		Y_{k+1} &=
+			\left(
+				\1{ Y_k^{\star}\geq 0} 
+				-
+				\1{ Y_k^{\star} < 0}
+			\right)Y_{k}^{\star} ~.
+	\end{aligned}
+\end{equation}
+\todo{
+	review if our diffusions
+	satisfies dissipative conditions
+}

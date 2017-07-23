@@ -1,0 +1,81 @@
+\begin{table}[p]
+	\centering
+	\caption{Parameters for Experiment2 (Persistence numerics)}
+	\label{tbl:persistence_parameters}
+	\begin{tabular}{@{}lllllc@{}}
+		\toprule
+		\multicolumn{4}{c}{%
+			Parameters for numerical experiment 2: Persistence of the disease %
+			} & \multicolumn{2}{c}{Reference}
+		\\
+		\cmidrule{1-4}
+		$H=\num{1500} ~\si{humans}$	&&	$A=\num{3000} ~\si{animals}$	& 
+		$K=\num{12000} ~\si{vectors}$&
+		& ---
+		\\
+		$\mu_h=\num{0.0142857}~\si{year^{-1}}$	&&$\mu_a=0.1666666 
+		~\si{year^{-1}}$	
+		& $\pi_{a} = \num{0.02} ~\si{animal.bite^{-1}}$
+		&																		& ---
+		\\
+		$\pi_{h} = \num{0.002} ~\si{human.bite^{-1}}$		&&
+		$\pi_{v_h} = \num{0.03} ~\si{vector.bite^{-1}}$	&
+		$\Lambda_v = 2.7 ~\si{year^{-1}}$
+		&& ---%\cite{Cruz-Pacheco2012a}
+		\\
+			$T=200 ~\si{years}$&&
+			$z_a = 182.5~\si{bite.year^{-1}.vector^{-1}}$		&
+			$z_h = 36.5 ~\si{bite.year^{-1}.vector^{-1}}$&&	---
+		\\
+		&&& $\pi_{v_a} = \num{0.06} ~\si{vector.bite^{-1}}$ &&	\cite{Cohen2001}
+		\\
+		&&& $\mu_v=2.4455 ~\si{year^{-1}}$ && \cite{Rabinovich1972}
+		\\
+		\multicolumn{1}{c}{
+			\Cref{fig:persistence_path,fig:mean_persistence}
+		}
+		&&
+		\multicolumn{1}{c}{
+			\Cref{fig:noise_variance_reduction}
+		}
+		&&
+		\\
+		\cmidrule{1-1}
+		\cmidrule{3-3}
+		&&&&
+		\multicolumn{2}{l}{vector human}		\\
+		\multicolumn{1}{r}{%
+			$\sigma_{z_h} = \num{0.00395}$
+			}
+		&&
+		\multicolumn{1}{l}{%
+			$\sigma_{z_h}^1 = \num{.00395}$, \quad
+			$\sigma_{z_h}^2 = \num{.002}$%
+			
+		}
+		&
+		\si{bite.vector^{-1}.human^{-1}.year^{-1}}
+		&
+		\multicolumn{2}{l}{and vector}
+		\\
+		\multicolumn{1}{r}{
+			$\sigma_{z_a} = \num{0.00195}$
+		}
+		&&
+		\multicolumn{1}{l}{
+			$\sigma_{z_a}^1 = \num{0.00195}$, \quad
+			$\sigma_{z_a}^2 = \num{0.001}$%
+		}
+		&
+		\si{bite.vector^{-1}.animal^{-1}.year^{-1}}
+		&
+		\multicolumn{2}{l}{animal biting}\\
+		&&&&
+		\multicolumn{2}{l}{amplitude}\\
+		&&&&
+		\multicolumn{2}{l}{noise}\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+\todo{Tabla4 $\pi_{v_h}$ unico de referencia ref[17]}
+\todo{$\mu_v$ poner ref 17}

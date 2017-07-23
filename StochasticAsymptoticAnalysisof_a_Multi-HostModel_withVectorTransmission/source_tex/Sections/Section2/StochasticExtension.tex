@@ -1,0 +1,112 @@
+
+	Randomness of the environmental factors influence on the biting 
+rates of vectors. Motivated for this, we perturb bitting parameters $z_{h}$ 
+and $z_{a}$ with functional stochastic noise intensities,
+\begin{align*}
+	z_{h}dt &\rightarrow z_{h}dt +
+		F_{1}\left(I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t)\right)dW_{1}(t),\\
+	z_{a}dt &\rightarrow z_{a}dt + 
+		F_{2}\left(I_{h}(t),I_{a}(t),S_{v}(t),I_{v}(t)\right)dW_{2}(t),
+\end{align*}
+where $W_{i}$ are independent Wiener processes defined on a filtered complete 
+probability space 
+$
+	(\Omega,\mathcal{F},\{\mathcal{F}_{t}\}_{t\geq 0},\mathbb{P})
+$, 
+and $F_{i}\left(I_{h},I_{a},S_{v},I_{v}\right)$ represents intensity of the 
+noise on bitting parameters. Thus, our stochastic extension of ~\eqref{eq.1} 
+reads
+\begin{equation}\label{eq.2}
+	\begin{aligned}
+		dI_{h} &= 
+			\left[\alpha_{h}I_{v}\left(H-I_{h}\right)-\mu_{h}I_{h}\right]dt 
+			+F_{1}
+			\left(
+				I_{h}, I_{a}, S_{v}, I_{v}
+			\right)
+			\theta_{h} I_{v} \left( H-I_{h}\right) dW_{1}(t)\\
+		dI_{a} &= \left[\alpha_{a}I_{v}\left(A-I_{a}\right)-\mu_{a}I_{a}\right]dt 
+						+ F_{2} 
+							\left(
+								I_{h},I_{a},S_{v},I_{v}
+							\right)
+							\theta_{a}I_{v}
+							\left(A-I_{a}\right)dW_{2}(t)\\
+		dS_{v} &= 
+			\left[
+				\Lambda_{v}
+				T_{v}-
+				\left(
+					\alpha_{v_{h}}I_{h}
+					+\alpha_{v_{a}} I_{a} 
+				\right) S_{v}
+				-\left(
+					\mu_{v}+r_{K}T_{v} 
+				\right) S_{v}
+			\right]dt \\
+		& 
+		-F_{1} 
+		\left(
+			I_{h},I_{a},S_{v},I_{v}
+		\right)
+			\theta_{v_{h}}I_{h}S_{v} dW_{1}(t)
+		-F_{2}
+		\left(
+			I_{h}, I_{a}, S_{v}, I_{v}
+		\right)\theta_{v_{a}}I_{a}S_{v}dW_{2}(t)\\
+		dI_{v} &= 
+		\left[
+			\left(\alpha_{v_{h}}I_{h}+\alpha_{v_{a}}I_{a}\right)
+			S_{v}
+			-\left(
+				\mu_{v}+r_{K}T_{v}
+			\right) I_{v}
+		\right]dt 
+			+ F_{1}
+			\left(
+				I_{h}, I_{a}, S_{v}, I_{v}
+			\right)
+			\theta_{v_{h}} I_{h} S_{v} dW_{1}(t)\\
+			& 
+			+F_{2}\left(I_{h},I_{a},S_{v},I_{v}\right)
+			\theta_{v_{a}}I_{a}S_{v}dW_{2}(t) ~.
+	\end{aligned}
+\end{equation}
+	where
+\begin{align*}
+	\alpha_{h}=z_{h}\theta_{h}, \qquad
+	\alpha_{a}=z_{a}\theta_{a}, \qquad
+	\alpha_{v_{h}}=z_{v_{h}}\theta_{v_{h}}, \qquad
+	\alpha_{v_{a}}=z_{v_{a}}\theta_{v_{a}},
+\end{align*}
+	In order to assure existence, uniqueness and positivity of solutions for the 
+above stochastic differential equation system (SDEs) we made the following
+Assumption.
+\begin{assumption}\label{ass:regularity}
+	Taking %$\mathbf{D}$
+	\begin{align*}
+		\mathbf{D} &:= 
+		\left\lbrace 
+				\left( 
+					I_{h},I_{a},S_{v},I_{v} 
+				\right)
+				\in 
+				\mathbb{R}^{4}:\ 0 \leq t_0, \ 0\leq I_{h} < H,\ 0\leq I_{a} < A,
+				\ 0<S_{v}\leq K, \ 0\leq I_{v}< K, \ S_{v}+I_{v} \leq K 
+		\right\rbrace
+	\end{align*}
+	as our working set, we ask the following.
+	\begin{enumerate}[({A}-1)]
+		\item 
+			The coefficients of SDEs~\eqref{eq.2} are Lipschitz on $\mathbf{D}$.
+		\item 
+			The initial condition $X_0 := (I_h(0), I_a(0), I_v(0), S_v(0))$ lies on
+			$\mathbf{D}$.
+		\item 
+			Each $F_{i}\left(I_{h},I_{a},S_{v},I_{v}\right)$ 
+			have the form
+			$I_{v}G_{i}\left(I_{h},I_{a},S_{v},I_{v}\right)$, 
+		where $G_{i}$ are functions locally Lipschitz-continuous on 
+		$\mathbb{R}^{4}$.
+	\end{enumerate}
+\end{assumption}

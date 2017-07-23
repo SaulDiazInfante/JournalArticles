@@ -1,0 +1,43 @@
+\begin{table}[htb]
+	\centering
+	\caption{Model parameters}
+	\label{tbl:parameter_definition}
+	\begin{tabular}{@{}rll@{}}
+		\toprule
+		\multicolumn{1}{c}{Parameter} & \multicolumn{1}{c}{Units}
+		&\multicolumn{1}{c}{Description}
+		\\ 
+		\midrule
+		$H$, $A$, $K$										& \si{human, animal, vector}
+		& Maximum allowable number of humans, animals and vectors.
+		\\
+		$\mu_{h}$, $\mu_a$, $\mu_v$		& \si{year^{-1}}														& 
+		Mortality rate of humans, animals and vectors.
+		\\
+		$z_{h}$, $z_{a}$								& $\si{bite.year^{-1}.vector^{-1}}$					
+		& 
+		Human and Animal bitting rates per vector.
+		\\ 
+		$\pi_h$ , $\pi_a$						&\si{human.bite^{-1}, 
+		animal.bite^{-1}}												& 
+		Proportion of contacts between an infected vector and a 
+		\\
+		&&
+		susceptible human (animal) that result in infection.
+		\\
+		$\pi_{v_{h}}$ , $\pi_{v_{a}}$							
+		&\si{vector.bite^{-1}}											& 
+		Fraction of contacts between susceptible vectors and 
+		\\
+		&&
+		infected humans (animals) that produces new infections.
+		\\
+		$\Lambda_v$										&\si{year^{-1}}														& 
+		Vector birth rate
+		\\
+		$r$														&\si{year^{-1}} 
+		& Vector net growth rate
+		\\
+		\bottomrule
+	\end{tabular}
+\end{table}
